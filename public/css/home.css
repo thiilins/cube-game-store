@@ -1,0 +1,53 @@
+:root {
+  --azul: #;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+#header {
+  width: 100%;
+  height: 21rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #280e4d;
+  padding: 1rem 3rem;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  width: 100%;
+  height: 10rem;
+}
+.profile {
+  background-color: black;
+  width: 10rem;
+  height: 10rem;
+}
+.logo {
+  background-color: black;
+  width: 10rem;
+  height: 10rem;
+}
+.search {
+  background-color: black;
+  width: 10rem;
+  height: 10rem;
+}
+.mini-cart {
+  background-color: black;
+  width: 10rem;
+  height: 10rem;
+}
