@@ -6,41 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/css/home.css" />
     <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      main {
+        width: 100%;
+        height: 50vh;
+      }
+    </style>
     <title>Home</title>
   </head>
   <body>
-    <header id="header">
-      <div class="header-container1">
-        <div class="header-profile">
-          <div class="profile-avatar">
-            <img src="/public/img/avatar_null.svg" alt="avatar" />
+    <div id="container">
+      <!-- Header -->
+      <header id="main-header">
+        <!-- TOP HEADER-->
+        <div class="header-container1">
+          <!-- PROFILE-->
+          <div class="header-profile">
+            <!-- AVATAR-->
+            <div class="profile-avatar">
+              <img src="/public/img/icons/avatar.svg" alt="avatar" />
+            </div>
+            <!-- DETAILS -->
+            <div class="profile-details">
+              <p>Olá, visitante</p>
+              <ul>
+                <li><a class="profile-links" href="#">Entrar</a></li>
+                <li>|</li>
+                <li><a class="profile-links" href="#">Registrar</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="profile-details">
-            <p>Olá, visitante</p>
+          <!-- LOGO-->
+          <div class="header-logo">
+            <img src="/public/img/logo/logo-hd.svg" alt="" />
+          </div>
+          <div class="header-items">
+            <!-- SEARCH -->
+            <div class="header-search">
+              <img src="/public/img/icons/search.svg" alt="" />
+            </div>
+            <!-- CART -->
+            <div class="header-mini-cart">
+              <img src="/public/img/icons/shop-bag-quantity.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- HEADER MENU-->
+        <div class="header-container2">
+          <nav>
+            <ul class="menu menu-header">
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main></main>
+      <!-- FOOTER -->
+
+      <footer id="main-footer">
+        <div class="footer-container1">
+          <nav>
+            <ul class="menu">
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-container2">
+          <div id="footer-contact">
+            <h3>Precisa de Ajuda?</h3>
+            <hr />
             <ul>
-              <li>Entrar</li>
-              <li>Resgistrar</li>
+              <li class="ft-contact-item">
+                <img
+                  class="ft-contact-icon"
+                  src="/public/img/icons/phone.svg"
+                />
+                0800 000 000
+              </li>
+              <li class="ft-contact-item">
+                <img class="ft-contact-icon" src="/public/img/icons/mail.svg" />
+                contato@seusite.com.br
+              </li>
+              <li class="ft-contact-item">
+                <img
+                  class="ft-contact-icon"
+                  src="/public/img/icons/clock.svg"
+                />
+                <p class="ft-attendance">
+                  Segunda a Sexta 08:00 as 18:00 Exceto feriados
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div id="copyright-center">
+            <img class="ft-logo" src="/public/img/logo/logo-ft.svg" alt="" />
+            <p class="copyright">Todos os direitos reservados &copy; 2021</p>
+          </div>
+          <div id="ft-social">
+            <ul class="footer-social">
+              <li class="ft-social-item">
+                <img
+                  src="/public/img/icons/facebook.svg"
+                  alt=""
+                  class="ft-social-icon"
+                />
+              </li>
+              <li class="ft-social-item">
+                <img
+                  src="/public/img/icons/twitter.svg"
+                  alt=""
+                  class="ft-social-icon"
+                />
+              </li>
+              <li class="ft-social-item">
+                <img
+                  src="/public/img/icons/instagram.svg"
+                  alt=""
+                  class="ft-social-icon"
+                />
+              </li>
             </ul>
           </div>
         </div>
-        <div class="header-logo"></div>
-        <div class="header-items">
-          <div class="header-search"></div>
-          <div class="header-mini-cart"></div>
-        </div>
-      </div>
-      <div class="header-container2">
-        <hr class="line" />
-        <nav id="menu-header">
-          <ul>
-            <li>Item X</li>
-            <li>Item X</li>
-            <li>Item X</li>
-            <li>Item X</li>
-            <li>Item X</li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      </footer>
+    </div>
   </body>
 </html>
