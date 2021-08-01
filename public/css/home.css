@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -32,9 +32,11 @@ ul {
   height: 10rem;
 }
 .profile {
+  display: flex;
   background-color: black;
-  width: 10rem;
-  height: 10rem;
+}
+.avatar {
+  width: 8rem;
 }
 .logo {
   background-color: black;
