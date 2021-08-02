@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Produto</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <header id="main-header">
+        <!-- TOP HEADER-->
+        <div class="header-container1">
+          <!-- PROFILE-->
+          <div class="header-profile">
+            <!-- AVATAR-->
+            <div class="profile-avatar">
+              <img src="/img/icons/avatar.svg" alt="avatar" />
+            </div>
+            <!-- DETAILS -->
+            <div class="profile-details">
+              <p>Olá, visitante</p>
+              <ul>
+                <li><a class="profile-links" href="#">Entrar</a></li>
+                <li>|</li>
+                <li><a class="profile-links" href="#">Registrar</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- LOGO-->
+          <div class="header-logo">
+            <img src="/img/logo/logo-hd.svg" alt="" />
+          </div>
+          <div class="header-items">
+            <!-- SEARCH -->
+            <div class="header-search">
+              <img src="/img/icons/search.svg" alt="" />
+            </div>
+            <!-- CART -->
+            <div class="header-mini-cart">
+              <img src="/img/icons/shop-bag-quantity.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- HEADER MENU-->
+        <div class="header-container2">
+          <nav>
+            <ul class="menu menu-header">
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- PRODUCT  -->
+      <main id="product">
+        <!-- PRODUCT PICTURE GALLERY (MAIN) -->
+        <section id="product-photos">
+          <div id="product-main-photo">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="main-photo"
+            />
+          </div>
+          <!-- PRODUCT PICTURE GALLERY (THUMBS) -->
+          <div>
+            <ul id="product-thumbs">
+              <li>
+                <img
+                  src="/img/products/default.jpg"
+                  alt=""
+                  class="prod-photo-thumb"
+                />
+              </li>
+              <li>
+                <img
+                  src="/img/products/default.jpg"
+                  alt=""
+                  class="prod-photo-thumb"
+                />
+              </li>
+              <li>
+                <img
+                  src="/img/products/default.jpg"
+                  alt=""
+                  class="prod-photo-thumb"
+                />
+              </li>
+              <li>
+                <img
+                  src="/img/products/default.jpg"
+                  alt=""
+                  class="prod-photo-thumb"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- PRODUCT DETAIL -->
+        <section id="product-details">
+          <!-- PRODUCT NAME -->
+          <div id="prod-details-name">
+            <h1>Nome do Produto</h1>
+            <hr class="prod-line" />
+            <!-- PRODUCT SKU -->
+            <p id="prod-sku">SKU 999999</p>
+          </div>
+          <!-- PRODUCT PRICE -->
+          <div id="product-price">
+            <!-- REGULAR PRICE -->
+            <div id="prod-regular-price">
+              <span class="price-of">de</span>
+              <p class="regular-price">R$ 900,00</p>
+            </div>
+            <!-- PRODUCT PROMO -->
+            <div id="product-promo">
+              <!-- PROMO PRICE -->
+              <div class="product-promo-price">
+                <span class="price-for">Por</span>
+                <p class="promo-price">
+                  <small>R$</small> 900,<small>00</small>
+                </p>
+              </div>
+              <div class="price-installment">Em 12X sem juros de R$ 99,99</div>
+            </div>
+          </div>
+          <!-- DESCRIPTION -->
+          <div id="product-description">
+            <h2 class="prod-details-title">DESCRIÇÃO DO PRODUTO</h2>
+            <hr class="prod-line" />
+            <p class="product-description-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+            </p>
+          </div>
+          <!-- SHIPPING -->
+          <div id="product-shipping">
+            <h2 class="prod-details-title">
+              CALCULAR FRETE E PRAZO DE ENTREGA
+            </h2>
+            <hr class="prod-line" />
+            <div id="shipping-details">
+              <!-- ZIP CODE -->
+              <form class="shipping-zip-code" action="#" method="post">
+                <label class="lb-zip-code" for="zip-code">
+                  Insira seu CEP
+                </label>
+                <input
+                  type="text"
+                  name="zip-code"
+                  id="zip-code"
+                  placeholder="00000-000"
+                />
+                <a class="forget-zip-code">Não sei meu cep</a>
+              </form>
+              <!-- ADDRESS -->
+              <div id="prod-shipping-street">
+                <img
+                  src="/img/icons/pin-full.svg"
+                  alt=""
+                  class="street-pin"
+                />
+                <div id="ship-address-street">
+                  <p class="ship-street">Avenida Paulista</p>
+                  <p class="ship-address-city">São Paulo - SP</p>
+                  <p class="ship-address-error">Esta errado?</p>
+                </div>
+              </div>
+              <!-- SHIPPING TYPE -->
+              <div id="shipping-method">
+                <p>EXPRESSA 99 dias R$99,99</p>
+                <p>NORMAL 99 dias R$99,99</p>
+              </div>
+            </div>
+          </div>
+          <div id="product-buy-container">
+            <!-- SHARE -->
+            <div id="product-share">
+              <img
+                src="/img/icons/share.svg"
+                alt=""
+                class="prod-share-icon"
+              />
+              Compartilhe
+            </div>
+            <!-- QUANTITY -->
+            <div id="prod-quantity-inventory">
+              <label for="quantity">Quantidade</label>
+              <input type="numero" name="quantity" id="quantity" value="1" />
+            </div>
+            <!-- INVENTORY -->
+            <div id="prod-inventory">
+              <p id="prod-inventory-status">Em estoque</p>
+              <p id="prod-inventory-quantity">99 unidades</p>
+            </div>
+            <!-- BUY BUTTON  -->
+            <button id="prod-buy-btn">COMPRAR</button>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer id="main-footer">
+        <div class="footer-container1">
+          <nav>
+            <ul class="menu">
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+              <li>Item X</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-container2">
+          <div id="footer-contact">
+            <h3>Precisa de Ajuda?</h3>
+            <hr />
+            <ul>
+              <li class="ft-contact-item">
+                <img
+                  class="ft-contact-icon"
+                  src="/img/icons/phone.svg"
+                />
+                0800 000 000
+              </li>
+              <li class="ft-contact-item">
+                <img class="ft-contact-icon" src="/img/icons/mail.svg" />
+                contato@seusite.com.br
+              </li>
+              <li class="ft-contact-item">
+                <img
+                  class="ft-contact-icon"
+                  src="/img/icons/clock.svg"
+                />
+                <p class="ft-attendance">
+                  Segunda a Sexta 08:00 as 18:00 Exceto feriados
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div id="copyright-center">
+            <img class="ft-logo" src="/img/logo/logo-ft.svg" alt="" />
+            <p class="copyright">Todos os direitos reservados &copy; 2021</p>
+          </div>
+          <div id="ft-social">
+            <ul class="footer-social">
+              <li class="ft-social-item">
+                <img
+                  src="/img/icons/facebook.svg"
+                  alt=""
+                  class="ft-social-icon"
+                />
+              </li>
+              <li class="ft-social-item">
+                <img
+                  src="/img/icons/twitter.svg"
+                  alt=""
+                  class="ft-social-icon"
+                />
+              </li>
+              <li class="ft-social-item">
+                <img
+                  src="/img/icons/instagram.svg"
+                  alt=""
+                  class="ft-social-icon"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
