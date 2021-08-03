@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="css/main.css"/>
-
+    <link rel="stylesheet" href="/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,13 +55,13 @@
         <div class="header-container2">
           <nav>
             <ul class="menu menu-header">
-              <li>Item X</li>
-              <li>Item X</li>
-              <li>Item X</li>
-              <li>Item X</li>
-              <li>Item X</li>
-              <li>Item X</li>
-              <li>Item X</li>
+              <li><a class="menu-item-link" href="/home">Home</a></li>
+              <li><a class="menu-item-link" href="/categoria">Categoria</a></li>
+              <li><a class="menu-item-link" href="/produto">Produto</a></li>
+              <li><a class="menu-item-link" href="#">ITEM X</a></li>
+              <li><a class="menu-item-link" href="#">ITEM X</a></li>
+              <li><a class="menu-item-link" href="#">ITEM X</a></li>
+              <li><a class="menu-item-link" href="#">ITEM X</a></li>
             </ul>
           </nav>
         </div>
@@ -73,11 +71,7 @@
         <!-- PRODUCT PICTURE GALLERY (MAIN) -->
         <section id="product-photos">
           <div id="product-main-photo">
-            <img
-              src="/img/products/default.jpg"
-              alt=""
-              class="main-photo"
-            />
+            <img src="/img/products/default.jpg" alt="" class="main-photo" />
           </div>
           <!-- PRODUCT PICTURE GALLERY (THUMBS) -->
           <div>
@@ -168,21 +162,24 @@
                   type="text"
                   name="zip-code"
                   id="zip-code"
+                  class="prod-page-input"
                   placeholder="00000-000"
                 />
-                <a class="forget-zip-code">Não sei meu cep</a>
+                <a href="#" class="error-small-msg forget-zip-code"
+                  >Não sei meu cep</a
+                >
               </form>
               <!-- ADDRESS -->
-              <div id="prod-shipping-street">
+              <div id="prod-shipping-address-simulation">
                 <img
                   src="/img/icons/pin-full.svg"
                   alt=""
-                  class="street-pin"
+                  id="street-pin-simulation"
                 />
-                <div id="ship-address-street">
-                  <p class="ship-street">Avenida Paulista</p>
-                  <p class="ship-address-city">São Paulo - SP</p>
-                  <p class="ship-address-error">Esta errado?</p>
+                <div id="ship-address-street-search">
+                  <p class="ship-street-search" id="">Avenida Paulista</p>
+                  <p class="ship-street-search">São Paulo - SP</p>
+                  <a href="#" class="error-small-msg">Esta errado?</a>
                 </div>
               </div>
               <!-- SHIPPING TYPE -->
@@ -195,22 +192,24 @@
           <div id="product-buy-container">
             <!-- SHARE -->
             <div id="product-share">
-              <img
-                src="/img/icons/share.svg"
-                alt=""
-                class="prod-share-icon"
-              />
+              <img src="/img/icons/share.svg" alt="" class="prod-share-icon" />
               Compartilhe
             </div>
             <!-- QUANTITY -->
             <div id="prod-quantity-inventory">
               <label for="quantity">Quantidade</label>
-              <input type="numero" name="quantity" id="quantity" value="1" />
+              <input
+                type="numero"
+                class="prod-page-input"
+                name="quantity"
+                id="quantity"
+                value="1"
+              />
             </div>
             <!-- INVENTORY -->
             <div id="prod-inventory">
               <p id="prod-inventory-status">Em estoque</p>
-              <p id="prod-inventory-quantity">99 unidades</p>
+              <p>99 unidades</p>
             </div>
             <!-- BUY BUTTON  -->
             <button id="prod-buy-btn">COMPRAR</button>
@@ -223,13 +222,13 @@
         <div class="footer-container1">
           <nav>
             <ul class="menu">
-              <li>Item X</li>
-              <li>Item X</li>
-              <li>Item X</li>
-              <li>Item X</li>
-              <li>Item X</li>
-              <li>Item X</li>
-              <li>Item X</li>
+              <li><a class="menu-item-link" href="/home">Home</a></li>
+              <li><a class="menu-item-link" href="/categoria">Categoria</a></li>
+              <li><a class="menu-item-link" href="/produto">Produto</a></li>
+              <li><a class="menu-item-link" href="#">ITEM X</a></li>
+              <li><a class="menu-item-link" href="#">ITEM X</a></li>
+              <li><a class="menu-item-link" href="#">ITEM X</a></li>
+              <li><a class="menu-item-link" href="#">ITEM X</a></li>
             </ul>
           </nav>
         </div>
@@ -239,10 +238,7 @@
             <hr />
             <ul>
               <li class="ft-contact-item">
-                <img
-                  class="ft-contact-icon"
-                  src="/img/icons/phone.svg"
-                />
+                <img class="ft-contact-icon" src="/img/icons/phone.svg" />
                 0800 000 000
               </li>
               <li class="ft-contact-item">
@@ -250,10 +246,7 @@
                 contato@seusite.com.br
               </li>
               <li class="ft-contact-item">
-                <img
-                  class="ft-contact-icon"
-                  src="/img/icons/clock.svg"
-                />
+                <img class="ft-contact-icon" src="/img/icons/clock.svg" />
                 <p class="ft-attendance">
                   Segunda a Sexta 08:00 as 18:00 Exceto feriados
                 </p>
