@@ -2,22 +2,22 @@
 const path = require("path");
 const mainController = {
   index: (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "views", "home.html"));
+    res.render("pages/home");
   },
   indexRedirect: (req, res) => {
     res.redirect("/");
   },
   product: (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "views", "product.html"));
+    res.render("pages/product");
   },
   category: (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "views", "category.html"));
+    res.render("pages/category");
   },
   login: (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "views", "login.html"));
+    res.render("pages/login");
   },
   account: (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "views", "account.html"));
+    res.render("pages/account");
   },
 };
 module.exports = mainController;

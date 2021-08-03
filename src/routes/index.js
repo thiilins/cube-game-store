@@ -9,5 +9,5 @@ routes.get("/home", mainController.indexRedirect);
 routes.get("/produto/:id?", mainController.product);
 routes.get("/categoria/:id?", mainController.category);
 routes.get("/login", mainController.login);
-routes.get("/account", mainController.account);
+routes.get("/minha-conta", mainController.account);
 module.exports = routes;

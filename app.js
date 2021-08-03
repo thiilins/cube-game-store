@@ -1,5 +1,9 @@
 const express = require("express");
 const app = express();
+//Configurando EJS
+app.set("view engine", "ejs");
+app.set("views", "./src/views");
+
 // importando módulo path
 const path = require("path");
 // importando as rotas principais
