@@ -45,26 +45,25 @@ button:hover {
 }
 .menu {
   display: flex;
-  font-size: 1.5rem;
   justify-content: space-around;
   color: white;
   max-width: 1920px;
-  text-align: center;
   margin: auto;
+  text-align: center;
 }
-.menu-item-link {
-  color: white;
-  font-weight: 400;
-}
-
 .menu > li {
   width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 1.5rem;
-  cursor: pointer;
+  display: flex;
 }
-.menu > li:hover {
+.menu-item-link {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+  width: 100%;
+  padding: 1.5rem;
+  text-transform: uppercase;
+}
+.menu-item-link:hover {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -74,8 +73,7 @@ button:hover {
   cursor: pointer;
 }
 /* HEADER */
-header#main-header {
-}
+
 #main-header {
   width: 100%;
   display: flex;
