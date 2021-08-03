@@ -36,15 +36,21 @@ button:hover {
   font-size: 1.5rem;
   color: red;
 }
-#container {
+.container {
   max-width: 1920px;
   margin: auto;
+}
+.rel {
+  position: relative;
 }
 .menu {
   display: flex;
   font-size: 1.5rem;
   justify-content: space-around;
   color: white;
+  max-width: 1920px;
+  text-align: center;
+  margin: auto;
 }
 .menu-item-link {
   color: white;
@@ -68,17 +74,21 @@ button:hover {
   cursor: pointer;
 }
 /* HEADER */
+header#main-header {
+}
 #main-header {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  min-height: 20rem;
   background-color: var(--primary);
   padding: 2rem 3rem 0rem 3rem;
   gap: 1.2rem;
+  /* position: sticky;
+  top: 0; */
 }
-.header-container1 {
+#header-container1 {
   display: flex;
   width: 100%;
   align-items: center;
@@ -104,11 +114,19 @@ button:hover {
 .profile-details > ul {
   font-size: 1.2rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   text-transform: capitalize;
 }
 .profile-links {
   color: white;
+}
+.login-link-header::after {
+  content: "|";
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 0.5rem;
 }
 .profile-avatar {
   display: flex;
@@ -149,7 +167,7 @@ button:hover {
   width: 5rem;
   cursor: pointer;
 }
-.header-container2 {
+#header-container2 {
   display: flex;
   flex-direction: column;
 }
@@ -175,7 +193,7 @@ button:hover {
 
 #product-main-photo {
   width: 100%;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 #product-main-photo:hover,
@@ -193,7 +211,7 @@ button:hover {
 .prod-photo-thumb {
   width: 100%;
   border-radius: 1rem;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 #product-details {
@@ -407,7 +425,7 @@ input#quantity {
   padding: 0 3rem;
 }
 
-.footer-container2 {
+#footer-container2 {
   display: flex;
   width: 100%;
 }
