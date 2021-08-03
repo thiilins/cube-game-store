@@ -151,20 +151,24 @@
           <hr class="prod-line" />
           <div id="shipping-details">
             <!-- ZIP CODE -->
-            <form class="shipping-zip-code" action="#" method="post">
-              <label class="lb-zip-code" for="zip-code"> Insira seu CEP </label>
-              <input
-                type="text"
-                name="zip-code"
-                id="zip-code"
-                class="prod-page-input"
-                placeholder="00000-000"
-              />
-              <a href="#" class="error-small-msg forget-zip-code"
-                >Não sei meu cep</a
-              >
-            </form>
-            <!-- ADDRESS -->
+            <div class="shipping-zip-code">
+              <form class="shipping-zip-code" action="#" method="post">
+                <label class="lb-zip-code" for="zip-code">
+                  Insira seu CEP
+                </label>
+                <input
+                  type="text"
+                  name="zip-code"
+                  id="zip-code"
+                  class="prod-page-input"
+                  placeholder="00000-000"
+                />
+                <a href="#" class="error-small-msg forget-zip-code"
+                  >Não sei meu cep</a
+                >
+              </form>
+            </div>
+            <!-- ADDRESS VERIFY -->
             <div id="prod-shipping-address-simulation">
               <img
                 src="/img/icons/pin-full.svg"
