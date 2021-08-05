@@ -12,6 +12,10 @@ app.get('/home', (req, res) => {
   res.redirect('/');
 });
 
+app.get('/teste', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'teste.html'));
+});
+
 app.listen(3000, () => {
   console.log('O servidor está rodando na porta 3000');
 });
