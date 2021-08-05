@@ -25,12 +25,18 @@ button {
   background-color: var(--acent);
   color: white;
   font-weight: 600;
-  padding: 2rem 4rem;
+  padding: 1rem 1rem;
   border-radius: 1rem;
   cursor: pointer;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 button:hover {
   background-color: var(--primary);
+}
+button.dark:hover {
+  background-color: white;
+  color: var(--acent);
 }
 h1 {
   font-size: 5rem;
@@ -38,7 +44,12 @@ h1 {
 h2 {
   font-size: 3rem;
 }
-
+input {
+  border-radius: 1rem;
+  outline: none;
+  border: 3px solid var(--primary);
+  padding: 0.8rem;
+}
 .error-small-msg {
   font-size: 1.5rem;
   color: red;
@@ -327,13 +338,11 @@ h2 {
   text-transform: uppercase;
 }
 input.prod-page-input {
-  border-radius: 1rem;
   font-size: 3rem;
   color: var(--primary);
   text-align: center;
-  outline: none;
-  border: 3px solid var(--primary);
 }
+
 input.prod-page-input::placeholder {
   color: var(--primary);
 }
@@ -419,9 +428,134 @@ input#quantity {
   padding: 2rem 5rem;
   width: 40%;
   align-self: flex-end;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+}
+/* LOGIN */
+#back-home-icon {
+  width: 2.6rem;
+  border: 2px solid white;
+  border-radius: 3rem;
+  padding: 0.5rem;
+  transition: all 0.1s ease-in-out;
 }
 
-/* FOOTER */
+#back-to-home-box a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 2rem;
+  color: #fff;
+}
+
+#back-to-home-box:hover #back-home-icon {
+  transform: scale(1.2);
+  border: 2px solid white;
+  font-weight: bold;
+  padding: 0.3rem;
+}
+
+#login-register-container {
+  background: var(--primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+#page-login-img {
+  background-image: url("/img/default/login-img.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#login-register-box {
+  display: flex;
+  min-height: 80vh;
+  padding: 3rem;
+}
+#login-register-box > div {
+  flex: 1;
+}
+
+#form-login-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 13rem;
+  justify-content: center;
+}
+#form-login-box,
+#login-page-form {
+  display: flex;
+  flex-direction: column;
+}
+#form-login-box {
+  min-width: 40rem;
+  height: 100%;
+  justify-items: center;
+  margin: auto;
+}
+#login-page-form {
+  min-width: 40rem;
+  gap: 1.5rem;
+}
+.password-input-fields {
+  display: flex;
+  flex-direction: column;
+}
+#login-page-form input {
+  padding: 1.6rem;
+  margin-top: 1rem;
+}
+#login-page-form input::placeholder {
+  padding: 1.6rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+#login-page-form button {
+  margin-top: 1rem;
+  padding: 1.3rem;
+  font-size: 2rem;
+  width: 60%;
+  align-self: center;
+}
+#login-page-form a {
+  color: white;
+}
+
+#not-password-link {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  align-self: flex-end;
+  padding: 0.2rem 1rem;
+}
+.login-line-dark {
+  border: 1px solid #fff;
+  background-color: #fff;
+  margin-bottom: 3rem;
+}
+.login-section-title-dark {
+  font-size: 2.5rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+#not-register-box {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 0;
+  width: 20rem;
+  margin: 0 auto;
+}
+#not-register-box a {
+  color: white;
+}
+/* FOOTER PADRÃO */
 #main-footer {
   background-color: var(--primary);
   display: flex;
@@ -496,4 +630,23 @@ input#quantity {
 .ft-social-item,
 .ft-social-icon {
   width: 3rem;
+}
+
+/*  FOOTER MINIMALISTA */
+
+#footer-2 {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+#footer2-logo-box,
+#footer-copyrigth-box {
+  display: flex;
+  align-items: center;
+}
+#ft2-logo {
+  width: 15rem;
 }
