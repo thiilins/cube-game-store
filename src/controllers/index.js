@@ -2,7 +2,8 @@
 const path = require("path");
 const mainController = {
   index: (req, res) => {
-    res.render("pages/home", { page: "Home" });
+    res.sendFile(path.resolve(__dirname, "..", "views", "home.html"));
+    // res.render("pages/home", { page: "Home" });
   },
   indexRedirect: (req, res) => {
     res.redirect("/");
@@ -13,11 +14,14 @@ const mainController = {
   category: (req, res) => {
     res.render("pages/category", { page: "Categoria" });
   },
-  login: (req, res) => {
+  loginTest: (req, res) => {
     res.render("pages/login", { page: "Login" });
   },
   account: (req, res) => {
     res.render("pages/account", { page: "Minha Conta" });
+  },
+  login: (req, res) => {
+    res.sendFile(path.resolve(__dirname, "..", "views", "login.html"));
   },
 };
 module.exports = mainController;
