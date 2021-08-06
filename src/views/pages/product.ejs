@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<%- include('../partials/head'); %>
+  <body class="rel">
+    <!-- Header -->
+<%- include('../partials/header') %> 
+    <!-- PRODUCT  -->
+    <main id="product" class="container">
+      <!-- PRODUCT PICTURE GALLERY (MAIN) -->
+      <section id="product-photos">
+        <div id="product-main-photo">
+          <img src="/img/products/default.jpg" alt="" class="main-photo" />
+        </div>
+        <!-- PRODUCT PICTURE GALLERY (THUMBS) -->
+        <div>
+          <ul id="product-thumbs">
+            <li>
+              <img
+                src="/img/products/default.jpg"
+                alt=""
+                class="prod-photo-thumb"
+              />
+            </li>
+            <li>
+              <img
+                src="/img/products/default.jpg"
+                alt=""
+                class="prod-photo-thumb"
+              />
+            </li>
+            <li>
+              <img
+                src="/img/products/default.jpg"
+                alt=""
+                class="prod-photo-thumb"
+              />
+            </li>
+            <li>
+              <img
+                src="/img/products/default.jpg"
+                alt=""
+                class="prod-photo-thumb"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- PRODUCT DETAIL -->
+      <section id="product-details">
+        <!-- PRODUCT NAME -->
+        <div id="prod-details-name">
+          <h1>Nome do Produto</h1>
+          <hr class="prod-line" />
+          <!-- PRODUCT SKU -->
+          <p id="prod-sku">SKU 999999</p>
+        </div>
+        <!-- PRODUCT PRICE -->
+        <div id="product-price">
+          <!-- REGULAR PRICE -->
+          <div id="prod-regular-price">
+            <span class="price-of">de</span>
+            <p class="regular-price">R$ 900,00</p>
+          </div>
+          <!-- PRODUCT PROMO -->
+          <div id="product-promo">
+            <!-- PROMO PRICE -->
+            <div class="product-promo-price">
+              <span class="price-for">Por</span>
+              <p class="promo-price"><small>R$</small> 900,<small>00</small></p>
+            </div>
+            <div class="price-installment">Em 12X sem juros de R$ 99,99</div>
+          </div>
+        </div>
+        <!-- DESCRIPTION -->
+        <div id="product-description">
+          <h2 class="prod-details-title">DESCRIÇÃO DO PRODUTO</h2>
+          <hr class="prod-line" />
+          <p class="product-description-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has
+          </p>
+        </div>
+        <!-- SHIPPING -->
+        <div id="product-shipping">
+          <h2 class="prod-details-title">CALCULAR FRETE E PRAZO DE ENTREGA</h2>
+          <hr class="prod-line" />
+          <div id="shipping-details">
+            <!-- ZIP CODE -->
+            <div class="shipping-zip-code">
+              <form class="shipping-zip-code" action="#" method="post">
+                <label class="lb-zip-code" for="zip-code">
+                  Insira seu CEP
+                </label>
+                <input
+                  type="text"
+                  name="zip-code"
+                  id="zip-code"
+                  class="prod-page-input"
+                  placeholder="00000-000"
+                />
+                <a href="#" class="error-small-msg forget-zip-code"
+                  >Não sei meu cep</a
+                >
+              </form>
+            </div>
+            <!-- ADDRESS VERIFY -->
+            <div id="prod-shipping-address-simulation">
+              <img
+                src="/img/icons/pin-full.svg"
+                alt=""
+                id="street-pin-simulation"
+              />
+              <div id="ship-address-street-search">
+                <p class="ship-street-search" id="">Avenida Paulista</p>
+                <p class="ship-street-search">São Paulo - SP</p>
+                <a href="#" class="error-small-msg">Esta errado?</a>
+              </div>
+            </div>
+            <!-- SHIPPING TYPE -->
+            <div id="shipping-method">
+              <p>EXPRESSA 99 dias R$99,99</p>
+              <p>NORMAL 99 dias R$99,99</p>
+            </div>
+          </div>
+        </div>
+        <div id="product-buy-container">
+          <!-- SHARE -->
+          <div id="product-share">
+            <img src="/img/icons/share.svg" alt="" class="prod-share-icon" />
+            Compartilhe
+          </div>
+          <!-- QUANTITY -->
+          <div id="prod-quantity-inventory">
+            <label for="quantity">Quantidade</label>
+            <input
+              type="numero"
+              class="prod-page-input"
+              name="quantity"
+              id="quantity"
+              value="1"
+            />
+          </div>
+          <!-- INVENTORY -->
+          <div id="prod-inventory">
+            <p id="prod-inventory-status">Em estoque</p>
+            <p>99 unidades</p>
+          </div>
+          <!-- BUY BUTTON  -->
+          <button id="prod-buy-btn">COMPRAR</button>
+        </div>
+      </section>
+    </main>
+<!-- FOOTER -->
+ <%- include('../partials/footer') %> 
+  </body>
+</html>
