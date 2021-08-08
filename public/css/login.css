@@ -19,6 +19,7 @@
   color: white;
   font-size: 1.2rem;
   margin: 0.5rem;
+  text-transform: uppercase;
 }
 .login-back-icon {
   width: 1.2rem;
@@ -28,16 +29,89 @@
   min-height: 80vh;
   display: flex;
 }
-#login-container  div{
-  flex-grow:1;
+
+#login-container > div {
+  flex-grow: 1;
+  min-width: 50%;
 }
 #login-left {
-
+  width: 50%;
   background-image: url(../img/default/login-img.jpg);
+  background-size: cover;
+  background-position: center center;
 }
-#login-right {
 
+#login-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  justify-content: center;
+  padding: 5rem;
+  gap: 5rem;
 }
+
+#login-right button:hover {
+  background-color: white;
+  color: var(--acent);
+}
+
+#login-title {
+}
+
+#login-title h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.login-line {
+  background-color: white;
+  border: 0.1rem solid white;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  min-width: 60%;
+  align-self: center;
+  gap: 1.5rem;
+}
+
+.login-inputs label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+.login-inputs input {
+  padding: 1.3rem 2rem;
+  font-size: 1.8rem;
+}
+
+.login-email-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-password-input {
+  display: flex;
+  flex-direction: column;
+}
+
+#forget-password-text {
+  color: white;
+  align-self: flex-end;
+  padding-right: 0.3rem;
+  padding-top: 0.3rem;
+}
+
+.login-btn {
+  font-size: 2rem;
+  padding: 1rem 3rem;
+}
+
+.register-bottons {
+}
+
 /* FOOTER  */
 .footer-container {
   display: flex;
