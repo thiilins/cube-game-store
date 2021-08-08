@@ -1,12 +1,50 @@
-body {
-  background-color: blue;
+:root {
+  --primary: #280e4d;
+  --acent: #068bbc;
+  --color1: #2a3492;
+  --color2: #261c58;
 }
-#login-page{
-  
-}
-#header-login {
+#login-page {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
+#header-login {
+  padding: 2rem;
+  height: 5rem;
+}
+#header-login a {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
 .login-back-icon {
-  width: 1rem;
+  width: 1.2rem;
+}
+/* MAIN */
+#login-container {
+  min-height: 80vh;
+  display: flex;
+}
+#login-container  div{
+  flex-grow:1;
+}
+#login-left {
+
+  background-image: url(../img/default/login-img.jpg);
+}
+#login-right {
+
+}
+/* FOOTER  */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.footer-logo-2 {
+  width: 10rem;
 }
