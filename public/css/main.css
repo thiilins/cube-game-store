@@ -3,6 +3,11 @@
   --acent: #068bbc;
   --color1: #2a3492;
   --color2: #261c58;
+  --gap: 2rem;
+  --smallFont: 1.1rem;
+  --titleFont: 3rem;
+  --titleTwoFont: 2rem;
+  --ligthColor: #fff;
 }
 * {
   margin: 0;
@@ -15,7 +20,7 @@
 }
 
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 ul {
@@ -23,19 +28,19 @@ ul {
 }
 button {
   background-color: var(--acent);
-  color: white;
+  color: var(--ligthColor);
   font-weight: 600;
-  padding: 1rem 1rem;
+  padding: 1.5rem 2.5rem;
   border-radius: 1rem;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 button:hover {
   background-color: var(--primary);
 }
 button.dark:hover {
-  background-color: white;
+  background-color: var(--ligthColor);
   color: var(--acent);
 }
 h1 {
@@ -64,7 +69,7 @@ input {
 .menu {
   display: flex;
   justify-content: space-around;
-  color: white;
+  color: var(--ligthColor);
   max-width: 1920px;
   margin: auto;
   text-align: center;
@@ -75,7 +80,7 @@ input {
 }
 .menu-item-link {
   font-size: 1.5rem;
-  color: white;
+  color: var(--ligthColor);
   font-weight: 400;
   width: 100%;
   padding: 1.5rem;
@@ -86,7 +91,7 @@ input {
   text-align: center;
   text-transform: uppercase;
   border-top: 2px solid var(--acent);
-  color: white;
+  color: var(--ligthColor);
   background-color: var(--acent);
   cursor: pointer;
 }
@@ -119,7 +124,7 @@ input {
 .profile-details {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: var(--ligthColor);
 }
 .profile-details > p {
   font-size: 2rem;
@@ -136,7 +141,7 @@ input {
   text-transform: capitalize;
 }
 .profile-links {
-  color: white;
+  color: var(--ligthColor);
 }
 .login-link-header::after {
   content: "|";
@@ -189,7 +194,7 @@ input {
 }
 
 .menu-header {
-  border-top: 2px solid white;
+  border-top: 2px solid var(--ligthColor);
 }
 /* PRODUCT PAGE */
 #product {
@@ -431,139 +436,6 @@ input#quantity {
   padding: 2rem 4rem;
   border-radius: 1rem;
 }
-/* LOGIN */
-#back-home-icon {
-  width: 2.6rem;
-  border: 2px solid white;
-  border-radius: 3rem;
-  padding: 0.5rem;
-  transition: all 0.1s ease-in-out;
-}
-
-#back-to-home-box a {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  padding: 2rem;
-  color: #fff;
-}
-
-#back-to-home-box:hover #back-home-icon {
-  transform: scale(1.2);
-  border: 2px solid white;
-  font-weight: bold;
-  padding: 0.3rem;
-}
-
-#login-register-container {
-  background: var(--primary);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-}
-#page-login-img {
-  background-image: url("/img/default/login-img.jpg");
-  background-size: cover;
-  background-position: center center;
-}
-#login-register-box {
-  display: flex;
-  min-height: 80vh;
-  padding: 3rem;
-}
-#login-register-box > div {
-  flex: 1;
-}
-
-#form-login-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding-right: 13rem;
-  justify-content: center;
-}
-#form-login-box,
-#login-page-form {
-  display: flex;
-  flex-direction: column;
-}
-#form-login-box {
-  min-width: 40rem;
-  height: 100%;
-  justify-items: center;
-  margin: auto;
-}
-#login-page-form {
-  min-width: 40rem;
-  gap: 3rem;
-  margin-top: 3rem;
-}
-.input-field {
-  display: flex;
-  flex-direction: column;
-}
-.input-field > label {
-  padding-left: 1rem;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
-.password-input-fields {
-  display: flex;
-  flex-direction: column;
-}
-#login-page-form input {
-  padding: 1.6rem;
-}
-#login-page-form input::placeholder {
-  padding: 1rem;
-  margin-top: 1rem;
-  text-transform: uppercase;
-}
-#login-page-form button {
-  margin-top: 1rem;
-  padding: 1.3rem;
-  font-size: 2rem;
-  width: 60%;
-  align-self: center;
-}
-#login-page-form a {
-  color: white;
-}
-
-#not-password-link {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  align-self: flex-end;
-  padding: 0.2rem 1rem;
-}
-.login-line-dark {
-  border: 1px solid #fff;
-  background-color: #fff;
-  margin-bottom: 3rem;
-}
-.login-section-title-dark {
-  font-size: 2.5rem;
-  padding-left: 1rem;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
-}
-#not-register-box {
-  display: flex;
-  font-size: 1.5rem;
-  gap: 0.5rem;
-  flex-direction: column;
-  text-align: center;
-  padding: 4rem 0;
-  width: 20rem;
-  margin: 3rem auto;
-}
-#not-register-box a {
-  color: white;
-}
 /* FOOTER PADRÃO */
 #main-footer {
   background-color: var(--primary);
@@ -584,7 +456,7 @@ input#quantity {
   flex-direction: column;
   justify-content: center;
   font-size: 1.6rem;
-  color: white;
+  color: var(--ligthColor);
   padding: 2rem 3rem 3rem 2rem;
 }
 #footer-contact > h3 {

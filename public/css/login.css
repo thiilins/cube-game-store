@@ -3,22 +3,32 @@
   --acent: #068bbc;
   --color1: #2a3492;
   --color2: #261c58;
+  --gap: 2rem;
+  --smallFont: 1.1rem;
+  --titleFont: 3rem;
+  --title2Font: 2.5rem;
+  --title3font: 2rem;
+  --ligthColor: #fff;
+  --input-label-size: 1.2rem;
+  --input-text-size: 2rem;
 }
 #login-page {
   background-color: var(--primary);
   display: flex;
   flex-direction: column;
-  color: white;
+  color: var(--ligthColor);
+  position: relative;
 }
 
 #header-login {
-  padding: 2rem;
+  padding: var(--gap);
   height: 5rem;
 }
 #header-login a {
-  color: white;
-  font-size: 1.2rem;
-  margin: 0.5rem;
+  color: var(--ligthColor);
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .login-back-icon {
@@ -37,7 +47,8 @@
 #login-left {
   width: 50%;
   background-image: url(../img/default/login-img.jpg);
-  background-size: cover;
+  background-size: 100%;
+
   background-position: center center;
 }
 
@@ -51,7 +62,7 @@
 }
 
 #login-right button:hover {
-  background-color: white;
+  background-color: var(--ligthColor);
   color: var(--acent);
 }
 
@@ -59,13 +70,14 @@
 }
 
 #login-title h3 {
-  font-size: 1.8rem;
+  font-size: var(--title2Font);
   text-transform: uppercase;
+  padding-bottom: 0.5rem;
 }
 
 .login-line {
-  background-color: white;
-  border: 0.1rem solid white;
+  background-color: var(--ligthColor);
+  border: 0.1rem solid var(--ligthColor);
 }
 
 .login-inputs {
@@ -77,14 +89,14 @@
 }
 
 .login-inputs label {
-  font-size: 1.2rem;
+  font-size: var(--input-label-size);
   text-transform: uppercase;
   padding-left: 1rem;
 }
 
 .login-inputs input {
-  padding: 1.3rem 2rem;
-  font-size: 1.8rem;
+  padding: 1.3rem var(--gap);
+  font-size: var(--input-text-size);
 }
 
 .login-email-input {
@@ -98,26 +110,25 @@
 }
 
 #forget-password-text {
-  color: white;
+  color: var(--ligthColor);
   align-self: flex-end;
   padding-right: 0.3rem;
   padding-top: 0.3rem;
+  font-size: var(--smallFont);
+  text-transform: uppercase;
 }
 
-.login-btn {
-  font-size: 2rem;
-  padding: 1rem 3rem;
-}
-
-.register-bottons {
+.register-buttons {
 }
 
 /* FOOTER  */
 .footer-container {
+  font-size: 1.3rem;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem var(--gap);
 }
 .footer-logo-2 {
   width: 10rem;
