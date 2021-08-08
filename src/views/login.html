@@ -8,30 +8,55 @@
     <link rel="stylesheet" href="/css/main.css" />
     <title>Login</title>
   </head>
-  <body>
-    <header class="back-to-home"><img src="" />Voltar para home</header>
-    <div class="login-container">
-      <div class="login-left">
-        <img src="/img/avatar_null.svg" , alt="imagem" />
-      </div>
-      <div class="login-right">
+
+  <body id="login-page">
+    <header id="header-login" class="back-to-home">
+      <img class="login-back-icon" src="/img/icons/previous-dark.svg" />
+      <a href="/home">Voltar para home</a>
+    </header>
+
+    <div id="login-container">
+      <div id="login-left"></div>
+
+      <div id="login-right">
         <h3>Entrar</h3>
-        <hr class="line" />
+        <hr class="login-line" />
         <div class="login-inputs">
-          <input type="email" placeholder="E-mail" />
-          <input type="password" placeholder="Senha" />
-          <a href="#">Esqueceu a senha?</a>
+          <div class="login-email-input">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="usuario@dominio.com.br"
+            />
+          </div>
+          <div class="login-password-input">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Digite sua senha"
+            />
+            <a id="forget-password-text" href="#">Esqueceu a senha?</a>
+          </div>
+
+          <button class="login-btn">Entrar</button>
         </div>
-        <div class="login-bottons">
-          <button>Entrar</button>
-          <a href="#">Não possui conta?</a>
-          <button>Cadastre-se</button>
+
+        <div class="register-bottons">
+          <p id="not-account-text" href="#">Não possui conta?</p>
+          <button class="register-btn">Cadastre-se</button>
         </div>
       </div>
     </div>
+
     <footer class="footer-container">
-      <div class="footer-container-logo"><img src="" /></div>
-      <div class="footer-container-copy">Todos os direitos reservados</div>
+      <div class="footer-container-logo">
+        <img src="/img/logo/logo-ft.svg" />
+      </div>
+      <div class="footer-container-copy">
+        Todos os direitos reservados &copy; 2021
+      </div>
     </footer>
   </body>
 </html>
