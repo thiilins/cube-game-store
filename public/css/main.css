@@ -55,7 +55,7 @@ input {
   color: red;
 }
 .container {
-  max-width: 1920px;
+  max-width: 1440px;
   margin: auto;
 }
 .rel {
@@ -499,7 +499,17 @@ input#quantity {
 }
 #login-page-form {
   min-width: 40rem;
-  gap: 1.5rem;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+.input-field > label {
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 .password-input-fields {
   display: flex;
@@ -507,10 +517,9 @@ input#quantity {
 }
 #login-page-form input {
   padding: 1.6rem;
-  margin-top: 1rem;
 }
 #login-page-form input::placeholder {
-  padding: 1.6rem;
+  padding: 1rem;
   margin-top: 1rem;
   text-transform: uppercase;
 }
@@ -550,7 +559,7 @@ input#quantity {
   text-align: center;
   padding: 4rem 0;
   width: 20rem;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 #not-register-box a {
   color: white;

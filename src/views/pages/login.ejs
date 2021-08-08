@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <%- include('../partials/head'); %>
 
-  <body id="login-register-container">
-    <header id="back-to-home">
-      <div id="back-to-home-box">
-        <a href="/home">
-          <img src="/img/icons/previous-dark.svg" alt="" id="back-home-icon">
-          Voltar para a página principal
-        </a>
-      </div>
-    </header>
-    <div id="login-register-box">
-      <div id="page-login-img">
-      </div>
+<body id="login-register-container">
+  <header id="back-to-home">
+    <div id="back-to-home-box">
+      <a href="/home">
+        <img src="/img/icons/previous-dark.svg" alt="" id="back-home-icon">
+        Voltar para a página principal
+      </a>
+    </div>
+  </header>
+  <div id="login-register-box">
+    <div id="page-login-img">
+    </div>
 
-      <div id="form-login-container">
-        <div id="login-page-title">
-          <h1 class="login-section-title-dark">Entrar</h1>
-          <hr class="login-line-dark">
-        </div>
-        <div id="form-login-box">
-          <form action="#" id="login-page-form" method="POST">
+    <div id="form-login-container">
+      <div id="login-page-title">
+        <h1 class="login-section-title-dark">Entrar</h1>
+        <hr class="login-line-dark">
+      </div>
+      <div id="form-login-box">
+        <form action="#" id="login-page-form" method="POST">
+          <div class="input-field">
+            <label for="E-mail">E-mail</label>
             <input type="text" name="email" id="email" placeholder="E-mail">
-            <div class="password-input-fields"> 
-              <input type="password" name="password" id="password" placeholder="Senha"> 
-              <a href="#"id="not-password-link">Esqueceu a senha?</a>
-            </div>
-            <button class="dark" type="submit">Entrar</button>
-          </form>
-          <div id="not-register-box"> 
-            <a href="#" id="not-register-text">NÃO POSSUI CONTA?</a>
-            <button class="dark">Cadastre-se</button>
           </div>
+          <div class="password-input-fields">
+            <div class="input-field">
+              <label for="password">Senha</label>
+              <input type="password" name="password" id="password" placeholder="Senha">
+            </div>
+            <a href="#" id="not-password-link">Esqueceu a senha?</a>
+          </div>
+          <button class="dark" type="submit">Entrar</button>
+        </form>
+        <div id="not-register-box">
+          <a href="#" id="not-register-text">NÃO POSSUI CONTA?</a>
+          <button class="dark">Cadastre-se</button>
         </div>
       </div>
+    </div>
 
   </div>
-    <%- include('../partials/footer-min'); %>
-  </body>
-  </html>
+  <%- include('../partials/footer-min'); %>
+</body>
+
+</html>
