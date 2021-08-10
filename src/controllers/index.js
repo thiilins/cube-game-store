@@ -15,13 +15,13 @@ const mainController = {
     res.render("pages/category", { page: "Categoria" });
   },
   loginTest: (req, res) => {
-    res.render("pages/login", { page: "Login" });
+    res.sendFile(path.resolve(__dirname, "..", "views", "login.html"));
   },
   account: (req, res) => {
     res.render("pages/account", { page: "Minha Conta" });
   },
   login: (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..", "views", "login.html"));
+    res.render("pages/login", { page: "Login" });
   },
 };
 module.exports = mainController;

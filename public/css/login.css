@@ -36,7 +36,7 @@
 }
 /* MAIN */
 #login-container {
-  min-height: 80vh;
+  min-height: 85vh;
   display: flex;
 }
 
@@ -59,6 +59,7 @@
   justify-content: center;
   padding: 5rem;
   gap: 5rem;
+  height: 100%;
 }
 
 #login-right button:hover {
@@ -67,6 +68,7 @@
 }
 
 #login-title {
+  justify-content: flex-end;
 }
 
 #login-title h3 {
@@ -118,7 +120,16 @@
   text-transform: uppercase;
 }
 
-.register-buttons {
+.register-button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#not-account-text {
+  font-size: var(--smallFont);
+  text-transform: uppercase;
 }
 
 /* FOOTER  */
