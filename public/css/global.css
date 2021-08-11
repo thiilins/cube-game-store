@@ -1,0 +1,62 @@
+:root {
+  --primary: #280e4d;
+  --acent: #068bbc;
+  --color1: #2a3492;
+  --color2: #261c58;
+  --gap: 2rem;
+  --smallFont: 1.1rem;
+  --titleFont: 3rem;
+  --titleTwoFont: 2rem;
+  --ligthColor: #fff;
+  --grid: 1fr minmax(320px, 1440px) 1fr;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+button {
+  background-color: var(--acent);
+  color: var(--ligthColor);
+  font-weight: 600;
+  padding: 1.5rem 2.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: var(--primary);
+}
+button.dark:hover {
+  background-color: var(--ligthColor);
+  color: var(--acent);
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+input {
+  border-radius: 1rem;
+  outline: none;
+  border: 3px solid var(--primary);
+  padding: 0.8rem;
+}
+main {
+  display: grid;
+  grid-template-columns: var(--grid);
+}
