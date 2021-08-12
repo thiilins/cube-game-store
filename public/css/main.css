@@ -1,13 +1,18 @@
+.fl-col {
+  display: flex;
+  flex-direction: column;
+}
+.rel {
+  position: relative;
+}
+
 .error-small-msg {
   font-size: 1.5rem;
   color: red;
 }
-.tf-container {
-  max-width: 1440px;
+.main-container {
+  max-width: 1600px;
   margin: auto;
-}
-.rel {
-  position: relative;
 }
 .menu {
   display: flex;
@@ -49,8 +54,6 @@
   background-color: var(--primary);
   padding: 2rem 3rem 0rem 3rem;
   gap: 1.2rem;
-  /* position: sticky;
-  top: 0; */
 }
 #header-container1 {
   display: flex;
@@ -157,26 +160,27 @@
   border-top: 2px solid var(--ligthColor);
 }
 /* HOMEPAGE */
+/* HOMEPAGE */
 
 .container {
-  /* max-width: 1440;
-  margin: auto; */
   position: relative;
-  grid-column: 2/3;
-  grid-template-columns: var(--grid);
+}
+.main-container-banner {
+  position: relative;
+  margin-bottom: 1rem;
 }
 .main-container-banner,
 .main-container-banner-items {
-  grid-column: 2/3;
-  height: 512px;
   width: 100%;
+  max-width: 1920px;
   display: flex;
   background-color: black;
 }
 .main-container-banner li {
-  background-color: aqua;
   width: 100%;
-  position: relative;
+}
+.main-container-banner-img {
+  max-width: 100%;
 }
 .top-banner-arrows {
   width: 100%;
@@ -204,19 +208,19 @@
 
 .main-container-features {
   display: flex;
-  grid-column: 2/3;
 }
 
 .main-container-features-images {
   display: grid;
-  padding: 1.3rem;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
   grid-template-columns: repeat(3, minmax(32rem, 1fr));
-  grid-column: 2/3;
-  gap: 1.3rem;
 }
 .mini-banner-home-image {
   width: 100%;
   border-radius: 1rem;
+  object-fit: cover;
 }
 .mini-banner-home-image:hover {
   opacity: 0.5;
@@ -226,7 +230,8 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  grid-column: 2/3;
+  color: var(--primary);
+  /*grid-column: 2/3; Corrigir*/
   margin: 6rem 0rem 2rem 0rem;
 }
 .featured-icon {
@@ -238,13 +243,12 @@
 }
 
 .products-cards {
-  grid-column: 2/3;
   width: 100%;
   display: grid;
   gap: 3rem;
   padding: 3rem;
   justify-content: center;
-  grid-template-columns: repeat(3, minmax(32rem, 35rem));
+  grid-template-columns: repeat(3, minmax(32rem, 40rem));
   margin: auto;
 }
 .card-product-container {
@@ -367,16 +371,16 @@
   cursor: pointer;
   transition: all 0.5s;
   text-transform: uppercase;
-  grid-column: 2/3;
 }
 .btn-show-more:hover {
   background-color: var(--primary);
 }
-.main-features-circles {
-  grid-column: 2/3;
-  display: flex;
-  gap: 2rem;
+.brand-features-circles {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(10rem, 20rem));
+  gap: 1.5rem;
   padding: 3rem 2rem;
+  justify-content: center;
 }
 .featured-brand {
   align-items: center;
