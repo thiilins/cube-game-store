@@ -7,7 +7,7 @@
   --smallFont: 1.1rem;
   --titleFont: 3rem;
   --titleTwoFont: 2rem;
-  --ligthColor: aliceblue;
+  --ligthColor: #fff;
   --grid: 1fr minmax(320px, 1440px) 1fr;
 }
 * {
@@ -59,4 +59,8 @@ input {
 main {
   display: grid;
   grid-template-columns: var(--grid);
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
