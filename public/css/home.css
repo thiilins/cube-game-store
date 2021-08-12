@@ -16,7 +16,7 @@
   background-color: aqua;
   width: 100%;
 }
-.banner-arrows {
+.top-banner-arrows {
   width: 100%;
   top: 24.5rem;
   position: absolute;
@@ -25,11 +25,11 @@
   align-items: center;
   z-index: 100;
 }
-.next-arrow {
+.top-banner-next-arrow {
   width: 35px;
   height: auto;
 }
-.left-arrow {
+.top-banner-left-arrow {
   transform: rotateY(180deg);
   background-color: aliceblue;
   padding: 1rem;
@@ -45,7 +45,7 @@
   grid-column: 2/3;
   background-color: blue;
 }
-.title {
+.featured-home-title {
   grid-column: 2/3;
 }
 .products {
