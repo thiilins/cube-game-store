@@ -1,6 +1,8 @@
 .container {
-  grid-column: 2/3;
+  /* max-width: 1440;
+  margin: auto; */
   position: relative;
+  grid-column: 2/3;
   grid-template-columns: var(--grid);
 }
 .main-container-banner {

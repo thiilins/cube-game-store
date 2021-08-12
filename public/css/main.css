@@ -2,7 +2,7 @@
   font-size: 1.5rem;
   color: red;
 }
-.container {
+.tf-container {
   max-width: 1440px;
   margin: auto;
 }
@@ -87,7 +87,7 @@
   color: var(--ligthColor);
 }
 .login-link-header::after {
-  content: '|';
+  content: "|";
   font-size: 1.2rem;
   font-weight: bold;
   padding: 0 0.5rem;
@@ -603,5 +603,10 @@ input#quantity {
 }
 .ft-social-item,
 .ft-social-icon {
+  width: 3rem;
+}
+
+/* CORREÇÕES */
+.featured-icon {
   width: 3rem;
 }
