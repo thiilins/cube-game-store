@@ -7,17 +7,17 @@
   --smallFont: 1.1rem;
   --titleFont: 3rem;
   --titleTwoFont: 2rem;
-  --ligthColor: #fff;
+  --ligthColor: aliceblue;
   --grid: 1fr minmax(320px, 1440px) 1fr;
 }
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 html {

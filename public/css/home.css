@@ -5,7 +5,8 @@
   grid-column: 2/3;
   grid-template-columns: var(--grid);
 }
-.main-container-banner {
+.main-container-banner,
+.main-container-banner-items {
   grid-column: 2/3;
   height: 512px;
   width: 100%;
@@ -15,6 +16,7 @@
 .main-container-banner li {
   background-color: aqua;
   width: 100%;
+  position: relative;
 }
 .top-banner-arrows {
   width: 100%;
@@ -30,13 +32,12 @@
   height: auto;
 }
 .top-banner-left-arrow {
-  transform: rotateY(180deg);
-  background-color: aliceblue;
+  background-color: var(--ligthColor);
   padding: 1rem;
-  border-radius: 35% 0 0 35%;
+  border-radius: 0% 35% 35% 0%;
 }
-.rigth-arrow {
-  background-color: aliceblue;
+.top-banner-rigth-arrow {
+  background-color: var(--ligthColor);
   padding: 1rem;
   border-radius: 35% 0 0 35%;
 }
