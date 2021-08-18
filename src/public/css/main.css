@@ -116,7 +116,7 @@
   object-fit: cover;
   justify-content: center;
 }
-.header-logo > img {
+.main-logo {
   width: 20rem;
 }
 
@@ -159,7 +159,6 @@
 .menu-header {
   border-top: 2px solid var(--ligthColor);
 }
-/* HOMEPAGE */
 /* HOMEPAGE */
 
 .container {
@@ -776,7 +775,7 @@ input#quantity {
 }
 
 /* FOOTER MINIMALISTA  */
-.footer-container {
+.footer-min-container {
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -784,8 +783,10 @@ input#quantity {
   justify-content: space-between;
   align-items: center;
   padding: 1rem var(--gap);
+  color: white;
+  background-color: var(--primary);
 }
-.footer-logo-2 {
+.footer-min-logo {
   width: 12rem;
 }
 
