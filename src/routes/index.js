@@ -10,5 +10,5 @@ router.get("/login", MainController.login);
 router.get("/loginTest", MainController.loginTest);
 router.get("/minha-conta", MainController.account);
 router.get("/checkout", MainController.checkout);
-
+router.get("/header", MainController.headertest);
 module.exports = router;

@@ -19,5 +19,10 @@ const MainController = {
   checkout: (req, res) => {
     res.sendFile(path.resolve(__dirname, "..", "views", "checkout.html"));
   },
+  headertest: (req, res) => {
+    res.sendFile(
+      path.resolve(__dirname, "..", "views", "partials", "header.html")
+    );
+  },
 };
 module.exports = MainController;
