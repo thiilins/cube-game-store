@@ -5,6 +5,12 @@ const port = 3000;
 // importando módulo path
 const path = require("path");
 
+//Importando o method-override para lidar com forms por put/delete
+//*?_method=PUT
+const methodOverride = require("method-override");
+app.use(methodOverride("_method"));
+
+
 /* importando e instanciandoas rotas */
 // importando as rotas principais
 const indexRouter = require("./src/routes");
