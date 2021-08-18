@@ -2,12 +2,12 @@ const express = require("express");
 // importando módulo router
 const router = express.Router();
 // importando o controller principal
-const IndexController = require("../controllers/IndexController");
+const MainController = require("../controllers/MainController");
 //definindo as rotas principais
-router.get("/", IndexController.index);
-router.get("/home", IndexController.indexRedirect);
-router.get("/login", IndexController.login);
-router.get("/loginTest", IndexController.loginTest);
-router.get("/minha-conta", IndexController.account);
+router.get("/", MainController.index);
+router.get("/home", MainController.indexRedirect);
+router.get("/login", MainController.login);
+router.get("/loginTest", MainController.loginTest);
+router.get("/minha-conta", MainController.account);
 
 module.exports = router;

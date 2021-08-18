@@ -5,7 +5,7 @@ const ProductController = {
   },
   category: (req, res) => {
     // res.render("pages/category", { page: "Categoria" });
-    res.sendFile(path.resolve(__dirname, "..", "views", "category.html"));
+    res.render("pages/maintenance");
   },
 };
 module.exports = ProductController;

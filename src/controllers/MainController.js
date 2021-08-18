@@ -1,6 +1,6 @@
 //importando módulo path
 const path = require("path");
-const IndexController = {
+const MainController = {
   index: (req, res) => {
     res.render("pages/home", { page: "CUBE Game Store" });
   },
@@ -18,4 +18,4 @@ const IndexController = {
     res.render("pages/login", { page: "Login" });
   },
 };
-module.exports = IndexController;
+module.exports = MainController;

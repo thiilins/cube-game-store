@@ -1,0 +1,40 @@
+/*MANUTENÇÃO*/
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 35%;
+  height: 100%;
+  padding: 1rem;
+  color: white;
+  font-family: "Roboto", sans serif;
+}
+
+.maintenance-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://source.unsplash.com/random/);
+  background-position: center;
+  background-size: cover;
+}
+.maintenance-box h1 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.maintenance-box button {
+  background-color: red;
+  color: #fff;
+}
+.maintenance-box button:hover {
+  background-color: white;
+  color: red;
+}
+
+/* FIM MANUTENÇÃO*/
