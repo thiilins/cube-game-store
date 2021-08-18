@@ -7,15 +7,17 @@ const MainController = {
   indexRedirect: (req, res) => {
     res.redirect("/");
   },
-
   loginTest: (req, res) => {
     res.sendFile(path.resolve(__dirname, "..", "views", "login.html"));
   },
   account: (req, res) => {
-    res.render("pages/account", { page: "Minha Conta" });
+    res.sendFile(path.resolve(__dirname, "..", "views", "account.html"));
   },
   login: (req, res) => {
     res.render("pages/login", { page: "Login" });
+  },
+  checkout: (req, res) => {
+    res.sendFile(path.resolve(__dirname, "..", "views", "checkout.html"));
   },
 };
 module.exports = MainController;

@@ -9,5 +9,6 @@ router.get("/home", MainController.indexRedirect);
 router.get("/login", MainController.login);
 router.get("/loginTest", MainController.loginTest);
 router.get("/minha-conta", MainController.account);
+router.get("/checkout", MainController.checkout);
 
 module.exports = router;
