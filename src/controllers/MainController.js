@@ -17,5 +17,8 @@ const MainController = {
   login: (req, res) => {
     res.render("pages/login", { page: "Login" });
   },
+  cart: (req, res) => {
+    res.render("pages/cart", { page: "Carrinho" });
+  },
 };
 module.exports = MainController;

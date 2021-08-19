@@ -2,7 +2,7 @@
   "name": "cube-game-store",
   "version": "1.0.0",
   "description": "Projeto integrador desenvolvido durante o curso Desenvolvimento Web Full Stack Digital House",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "./node_modules/.bin/nodemon app.js",

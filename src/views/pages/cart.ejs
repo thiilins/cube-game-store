@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- HEAD -->
+<%- include('../partials/head'); %>
+  <link rel="stylesheet" href="/css/cart.css" />
+
+  <body>
+    <!-- HEADER -->
+    <%- include('../partials/header'); %>
+      <!-- MAIN CONTENT -->
+   <main id="cart-main-container">
+  <header id="cart-page-header">
+    <div class="cart-page-title-box">
+      <h1 class="cart-page-header-title">Carrinho</h1>
+      <hr class="cart-page-header-title-line" />
+    </div>
+  </header>
+  <section id="cart-items">
+    <div class="cart-item">
+      <div class="cart-item-img-box">
+        <img src="/img/products/default.jpg" alt="" class="cart-item-img" />
+      </div>
+      <div class="cart-item-details-box">
+        <p class="cart-item-details-name">
+          Efootball Pro Evolution Soccer 2021 - PS4
+        </p>
+        <p class="cart-item-details-sku">ITEM: XXXXXX</p>
+      </div>
+      <div class="cart-item-quantity-box">
+        <input
+          type="numero"
+          class="cart-item-quantity-input"
+          name="quantity"
+          id="quantity"
+          value="1"
+        />
+        <a href="#" class="cart-remove-item">Remover</a>
+      </div>
+      <div class="cart-item-price-box">
+        <p class="cart-item-price"><small>R$</small> <span>900,</span><small>00</small></p>
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <div class="cart-item-img-box">
+        <img src="/img/products/default.jpg" alt="" class="cart-item-img" />
+      </div>
+      <div class="cart-item-details-box">
+        <p class="cart-item-details-name">
+          Efootball Pro Evolution Soccer 2021 - PS4
+        </p>
+        <p class="cart-item-details-sku">ITEM: XXXXXX</p>
+      </div>
+      <div class="cart-item-quantity-box">
+        <input
+          type="numero"
+          class="cart-item-quantity-input"
+          name="quantity"
+          id="quantity"
+          value="1"
+        />
+        <a href="#" class="cart-remove-item">Remover</a>
+      </div>
+      <div class="cart-item-price-box">
+        <p class="cart-item-price"><small>R$</small> <span>900,</span><small>00</small></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+      <!-- FOOTER -->
+      <%- include('../partials/footer'); %>
+  </body>
+
+</html

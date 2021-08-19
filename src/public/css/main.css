@@ -141,7 +141,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--acent);
-  color: white;
+  color:var(--ligthColor);
   font-weight: bold;
   border-radius: 3rem;
   font-size: 1.5rem;
@@ -501,7 +501,8 @@
   font-size: 2rem;
   text-transform: uppercase;
 }
-.promo-price {
+.promo-price,
+.cart-item-price {
   color: var(--primary);
   font-weight: bold;
   font-size: 4rem;
@@ -545,15 +546,18 @@
   font-weight: 600;
   text-transform: uppercase;
 }
-input.prod-page-input {
+input.prod-page-input,
+input.cart-item-quantity-input {
   font-size: 3rem;
   color: var(--primary);
   text-align: center;
 }
 
-input.prod-page-input::placeholder {
+input.prod-page-input::placeholder,
+input.cart-item-quantity-input::placeholder {
   color: var(--primary);
 }
+
 input#zip-code {
   padding: 0.8rem;
   border-radius: 1rem;
