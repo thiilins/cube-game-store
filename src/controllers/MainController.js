@@ -17,6 +17,9 @@ const MainController = {
   login: (req, res) => {
     res.render("pages/login", { page: "Login" });
   },
+   checkout: (req, res) => {
+    res.sendFile(path.resolve(__dirname, "..", "views", "checkout.html"));
+  },
   cart: (req, res) => {
     res.render("pages/cart", { page: "Carrinho" });
   },

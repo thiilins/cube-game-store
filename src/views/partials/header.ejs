@@ -5,12 +5,16 @@
     <div class="header-profile">
       <!-- AVATAR-->
       <div class="profile-avatar">
-        <img src="/img/icons/avatar.svg" alt="avatar" />
+        <img
+          src="/img/icons/avatar.svg"
+          class="img-avatar-header"
+          alt="avatar"
+        />
       </div>
       <!-- DETAILS -->
       <div class="profile-details">
-        <p>Olá, visitante</p>
-        <ul>
+        <p class="hello-profile">Olá, visitante</p>
+        <ul class="profile-details-links">
           <li class="login-link-header">
             <a class="profile-links" href="/login">Entrar</a>
           </li>
@@ -20,23 +24,30 @@
     </div>
     <!-- LOGO-->
     <div class="header-logo">
-      <img src="/img/logo/logo-hd.svg" alt="" />
+      <a href="/">
+        <img class="main-logo" src="/img/logo/logo-hd.svg" alt="" />
+      </a>
     </div>
     <div class="header-items">
       <!-- SEARCH -->
       <div class="header-search">
         <img src="/img/icons/search.svg" alt="" />
       </div>
+
       <!-- CART -->
       <a href="/cart">
         <div class="header-mini-cart rel">
           <img class="mini-cart-icon" src="/img/icons/shop-bag.svg" alt="" /></a>
         <div class="header-mini-cart-quantity">0</div>
       </div>
+      <!-- MENU MOBILE -->
+      <div class="header-mobile-btn">
+        <button id="mobile-btn">&#9776;</button>
+      </div>
     </div>
   </div>
   <!-- HEADER MENU-->
-  <div id="header-container2" class="menu-container">
+  <div id="header-container2" class="menu-header-links menu-container">
     <nav class="full-menu">
       <ul class="menu menu-header">
         <li><a class="menu-item-link" href="/home">Home</a></li>
@@ -44,8 +55,10 @@
           <a class="menu-item-link" href="/produto/categoria">Categoria</a>
         </li>
         <li><a class="menu-item-link" href="/produto">Produto</a></li>
-        <li><a class="menu-item-link" href="/minha-conta">Minha Conta</a></li>
-        <li><a class="menu-item-link" href="#">ITEM X</a></li>
+        <li>
+          <a class="menu-item-link" href="/minha-conta">Minha Conta</a>
+        </li>
+        <li><a class="menu-item-link" href="/checkout">Checkout</a></li>
         <li><a class="menu-item-link" href="#">ITEM X</a></li>
         <li><a class="menu-item-link" href="#">ITEM X</a></li>
       </ul>

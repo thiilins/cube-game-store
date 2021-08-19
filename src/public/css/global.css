@@ -6,8 +6,13 @@
   --gap: 2rem;
   --smallFont: 1.1rem;
   --titleFont: 3rem;
+  --title2Font: 2.5rem;
+  --title3font: 2rem;
   --titleTwoFont: 2rem;
   --ligthColor: #fff;
+  --ligthColor: #fff;
+  --input-label-size: 1.2rem;
+  --input-text-size: 2rem;
   --grid: 1fr minmax(320px, 1440px) 1fr;
 }
 * {
