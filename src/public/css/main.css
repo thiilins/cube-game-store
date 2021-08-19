@@ -28,66 +28,6 @@
   --ligthColor: #fff;
   --grid: 1fr minmax(320px, 1440px) 1fr;
 }
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: "Open Sans", sans-serif;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Dosis", sans-serif;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-ul {
-  list-style: none;
-}
-button {
-  background-color: var(--acent);
-  color: var(--ligthColor);
-  font-weight: 600;
-  padding: 1.5rem 2.5rem;
-  border-radius: 1rem;
-  cursor: pointer;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-}
-button:hover {
-  background-color: var(--primary);
-}
-button.dark:hover {
-  background-color: var(--ligthColor);
-  color: var(--acent);
-}
-h1 {
-  font-size: 5rem;
-}
-h2 {
-  font-size: 3rem;
-}
-input {
-  border-radius: 1rem;
-  outline: none;
-  border: 3px solid var(--primary);
-  padding: 0.8rem;
-}
-main {
-  display: grid;
-  grid-template-columns: var(--grid);
-}
-body {
-  max-width: 100%;
-}
-.fl-col {
-  display: flex;
-  flex-direction: column;
-}
-.rel {
-  position: relative;
-}
 
 .error-small-msg {
   font-size: 1.5rem;
@@ -157,7 +97,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--acent);
-  color:var(--ligthColor);
+  color: var(--ligthColor);
   font-weight: bold;
   border-radius: 3rem;
   font-size: 1.2rem;
@@ -589,15 +529,48 @@ body {
   text-transform: uppercase;
 }
 input.prod-page-input,
-input.cart-item-quantity-input {
+input.prod-quantity-input {
   font-size: 3rem;
   color: var(--primary);
   text-align: center;
+  border-radius: 0;
 }
 
 input.prod-page-input::placeholder,
-input.cart-item-quantity-input::placeholder {
+input.prod-quantity-input::placeholder {
   color: var(--primary);
+}
+.prod-quantity-box {
+  display: flex;
+}
+.prod-quantity-input {
+  max-width: 6rem;
+}
+.prod-quantity-box::before {
+  content: "\f053";
+  display: flex;
+  align-items: center;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3rem;
+  background-color: var(--primary);
+  color: white;
+  padding: 0 0.7rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  cursor: pointer;
+}
+.prod-quantity-box::after {
+  content: "\f054";
+  display: flex;
+  align-items: center;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3rem;
+  background-color: var(--primary);
+  color: white;
+  padding: 0 0.7rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  cursor: pointer;
 }
 
 input#zip-code {

@@ -15,6 +15,7 @@
   --input-text-size: 2rem;
   --grid: 1fr minmax(320px, 1440px) 1fr;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +27,9 @@
 }
 
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
-
 ul {
   list-style: none;
 }
@@ -69,4 +68,33 @@ main {
 }
 body {
   max-width: 100%;
+}
+.fl-col {
+  display: flex;
+  flex-direction: column;
+}
+.rel {
+  position: relative;
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.eot);
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2)
+      format("woff2"),
+    url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff)
+      format("woff"),
+    url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.ttf)
+      format("truetype"),
+    url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.svg#fontawesome)
+      format("svg");
+}
+
+._icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
