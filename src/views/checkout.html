@@ -1,60 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/hd-ft-test.css" />
-    <link rel="stylesheet" href="/css/checkout.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Finalizar Conta</title>
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header id="main-header">
-      <!-- TOP HEADER-->
-      <div id="header-container1" class="main-container">
-        <!-- LOGO-->
-        <div class="header-logo">
-          <a href="/">
-            <img class="logo-min" src="/img/logo/logo-hd.svg" alt="" />
-          </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/hd-ft-test.css" />
+  <link rel="stylesheet" href="/css/checkout.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <title>Finalizar Conta</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="main-header">
+    <!-- TOP HEADER-->
+    <div id="header-container1" class="main-container">
+      <!-- LOGO-->
+      <div class="header-logo">
+        <a href="/">
+          <img class="logo-min" src="/img/logo/logo-hd.svg" alt="" />
+        </a>
+      </div>
+      <!-- PROFILE-->
+      <div class="header-profile">
+        <!-- AVATAR-->
+        <div class="profile-avatar">
+          <img src="/img/icons/avatar.svg" alt="avatar" />
         </div>
-        <!-- PROFILE-->
-        <div class="header-profile">
-          <!-- AVATAR-->
-          <div class="profile-avatar">
-            <img src="/img/icons/avatar.svg" alt="avatar" />
-          </div>
-          <!-- DETAILS -->
-          <div class="profile-details">
-            <p>Olá, visitante</p>
-            <ul>
-              <li class="login-link-header">
-                <a class="profile-links" href="/login">Entrar</a>
-              </li>
-              <li><a class="profile-links" href="#">Registrar</a></li>
-            </ul>
-          </div>
+        <!-- DETAILS -->
+        <div class="profile-details">
+          <p>Olá, visitante</p>
+          <ul>
+            <li class="login-link-header">
+              <a class="profile-links" href="/login">Entrar</a>
+            </li>
+            <li><a class="profile-links" href="#">Registrar</a></li>
+          </ul>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!--  CONTEÚDO PRINCIPAL-->
+  <!--  CONTEÚDO PRINCIPAL-->
 
-    Incluir o código aqui
+  <main>
+    <section>
 
-    <!-- FOOTER -->
-    <footer class="footer-min-container">
-      <a href="/">
-        <img class="footer-min-logo" src="/img/logo/logo-ft.svg" />
-      </a>
-      <p class="footer-copy-2">Todos os direitos reservados &copy; 2021</p>
-    </footer>
-  </body>
+      <div>
+        <h2>DADOS DE FATURAMENTO</h2>
+        <hr class="checkout-title-line" />
+        <div>
+          <div class="checkout-billing-1">
+
+            <label for="name">
+              <p class="checkout-label-input">NOME COMPLETO</p>
+              <input type="text" placeholder="Ex: Carlos Alberto" />
+            </label>
+          </div>
+          <div class="checkout-billing-2">
+
+            <label for="date">
+              <p class="checkout-label-input">DATA DE NASCIMENTO</p>
+              <input type="text" placeholder="Ex: 21/09/1960" />
+            </label>
+            <label for="CPF">
+              <p class="checkout-label-input">CPF</p>
+              <input type="text" placeholder="Ex: 111.222.333-45" />
+            </label>
+          </div>
+          <div class="checkout-billing-3">
+
+            <label for="zipCode">
+              <p class="checkout-label-input">CEP</p>
+              <input type="text" placeholder="Ex: 12345-678" />
+            </label>
+            <label for="city">
+              <p class="checkout-label-input">CIDADE</p>
+              <input type="text" placeholder="Ex: Barueri" />
+            </label>
+            <label for="state">
+              <p class="checkout-label-input">UF</p>
+              <input type="text" placeholder="Ex: SP" />
+            </label>
+          </div>
+          <div class="checkout-billing-4">
+
+            <label for="street">
+              <p class="checkout-label-input">RUA</p>
+              <input type="text" placeholder="Ex: São Marcos" />
+            </label>
+            <label for="street_number">
+              <p class="checkout-label-input">Nº</p>
+              <input type="text" placeholder="Ex: 547" />
+            </label>
+            <label for="neighborhood">
+              <p class="checkout-label-input">BAIRRO</p>
+              <input type="text" placeholder="Ex: Parque Viana" />
+            </label>
+          </div>
+        </div>
+        <div class="checkout-payment">
+          <h2>PAGAMENTO</h2>
+          <hr class="checkout-title-line" />
+          <div class="checkou-payment-credit">
+            <label class="label-radio"for="credit">
+              <input type="radio" name="payment" checked />
+              <p class="checkout-label-input">CARTÃO DE CRÉDITO</p>
+            </label>
+          </div>
+          <div class="checkout-credit-card">
+            <label for="card_number">
+              <p class="checkout-label-input">NÚMERO DO CARTÃO</p>
+              <input type="text" placeholder="Ex: ****.****.****.1234" />
+            </label>
+            <label for="expiration_date">
+              <p class="checkout-label-input">Nº</p>
+              <input type="text" placeholder="Ex: 27/88" />
+            </label>
+            <label for="cvv">
+              <p class="checkout-label-input">CVV</p>
+              <input type="text" placeholder="Ex: 547" />
+            </label>
+          </div>
+          <div class="checkout-bearer">
+            <label class="label-radio">
+              <input type="checkbox" checked />
+              <p class="checkout-label-chekbox">Dados do portador iguais aos pessoais</p>
+            </label>
+          </div>
+          <div class="checkout-payment-type">
+            <label class="label-radio">
+              <input type="radio" name="payment"/>
+              <p class="checkout-label-input">BOLETO</p>
+            </label>
+            <label class="label-radio">
+              <input type="radio" name="payment"/>
+              <p class="checkout-label-input">PAYPAL</p>
+            </label>
+            <label class="label-radio">
+              <input type="radio" name="payment"/>
+              <p class="checkout-label-input">PIX</p>
+            </label>
+          </div>
+
+        </div>
+
+
+    </section>
+
+    <section>
+
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam error, vitae expedita voluptatum quisquam
+      reprehenderit inventore illo magnam. Placeat aut, aliquid odit nemo soluta ipsum impedit quia inventore eos
+      reprehenderit?
+
+    </section>
+
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer-min-container">
+    <a href="/">
+      <img class="footer-min-logo" src="/img/logo/logo-ft.svg" />
+    </a>
+    <p class="footer-copy-2">Todos os direitos reservados &copy; 2021</p>
+  </footer>
+</body>
+
 </html>

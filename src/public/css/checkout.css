@@ -1,5 +1,6 @@
 /* GLOBAL */
 :root {
+  --primaryLight: #CCC5D4;
   --primary: #280e4d;
   --acent: #068bbc;
   --color1: #2a3492;
@@ -9,7 +10,8 @@
   --titleFont: 3rem;
   --titleTwoFont: 2rem;
   --ligthColor: #fff;
-  --grid: 1fr minmax(320px, 1440px) 1fr;
+  --gridColumn: 1fr 1fr;
+
 }
 * {
   margin: 0;
@@ -50,6 +52,12 @@ h1 {
 }
 h2 {
   font-size: 3rem;
+  color: var(--primary);
+
+}
+label{
+  display:flex;
+  flex-direction: column;
 }
 input {
   border-radius: 1rem;
@@ -59,7 +67,13 @@ input {
 }
 main {
   display: grid;
-  grid-template-columns: var(--grid);
+  grid-template-columns: var(--gridColumn);
+  column-gap: 11px;
+  margin: 17px 0px 10px;
+}
+section{
+  background-color: var(--primaryLight);
+  padding: 20px 40px;
 }
 body {
   max-width: 100%;
@@ -109,6 +123,12 @@ body {
   background-color: var(--acent);
   cursor: pointer;
 }
+.checkout-title-line {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--primary);
+}
+
 /* HEADER */
 
 #main-header {
@@ -213,6 +233,54 @@ body {
   right: -1rem;
   bottom: -1rem;
 }
+.checkout-label-input{
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+.checkout-billing-1{
+display: grid;
+margin-top: 15px;
+
+}
+.checkout-billing-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18px;
+  margin-top: 15px;
+}
+.checkout-billing-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 100px;
+  column-gap: 18px;
+  margin-top: 15px;
+}
+.checkout-billing-4{
+  display: grid;
+  grid-template-columns: 1fr 77px 176px;
+  column-gap: 18px;
+  margin-top: 15px;
+}
+.checkout-label-radio{
+  
+}
+.label-radio{
+  display: flex;
+  flex-direction: row;
+}
+.checkout-payment-type{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.checkout-bearer{
+  display: flex;
+  align-self: flex-end;
+}
+.checkout-payment{
+  display: flex;
+  flex-direction: column;
+}
+
 #header-container2 {
   display: flex;
   flex-direction: column;
@@ -220,6 +288,11 @@ body {
 
 .menu-header {
   border-top: 2px solid var(--ligthColor);
+}
+.checkout-credit-card{
+  display: grid;
+  grid-template-columns: 1fr 130px 90px;
+  column-gap: 15px;
 }
 
 /* FOOTER MINIMALISTA  */
