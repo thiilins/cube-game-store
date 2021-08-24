@@ -10,7 +10,7 @@
   --titleFont: 3rem;
   --titleTwoFont: 2rem;
   --ligthColor: #fff;
-  --grid: 1fr minmax(320px, 1440px) 1fr;
+
 }
 #cart-main-container {
   display: flex;

@@ -1,5 +1,6 @@
 :root {
   --primary: #280e4d;
+  --primaryLight: #ccc5d4;
   --acent: #068bbc;
   --color1: #2a3492;
   --color2: #261c58;
@@ -62,12 +63,16 @@ input {
   border: 3px solid var(--primary);
   padding: 0.8rem;
 }
+input::placeholder {
+  color: var(--primary);
+}
 main {
   display: grid;
   grid-template-columns: var(--grid);
 }
 body {
   max-width: 100%;
+  min-height: 100vh;
 }
 .fl-col {
   display: flex;

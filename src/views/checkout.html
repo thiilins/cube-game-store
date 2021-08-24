@@ -1,172 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global-temp.css" />
+    <link rel="stylesheet" href="/css/checkout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Finalizar Conta</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/hd-ft-test.css" />
-  <link rel="stylesheet" href="/css/checkout.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
-  <title>Finalizar Conta</title>
-</head>
-
-<body>
-  <!-- HEADER -->
-  <header id="main-header">
-    <!-- TOP HEADER-->
-    <div id="header-container1" class="main-container">
-      <!-- LOGO-->
-      <div class="header-logo">
-        <a href="/">
-          <img class="logo-min" src="/img/logo/logo-hd.svg" alt="" />
-        </a>
+  <body>
+    <!-- HEADER -->
+    <header id="main-header">
+      <!-- TOP HEADER-->
+      <div id="header-container1" class="main-container">
+        <!-- LOGO-->
+        <div class="header-logo">
+          <a href="/">
+            <img class="logo-min" src="/img/logo/logo-hd.svg" alt="" />
+          </a>
+        </div>
+        <!-- PROFILE-->
+        <div class="header-profile">
+          <!-- AVATAR-->
+          <div class="profile-avatar">
+            <img src="/img/icons/avatar.svg" alt="avatar" />
+          </div>
+          <!-- DETAILS -->
+          <div class="profile-details">
+            <p>Olá, visitante</p>
+            <ul>
+              <li class="login-link-header">
+                <a class="profile-links" href="/login">Entrar</a>
+              </li>
+              <li><a class="profile-links" href="#">Registrar</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <!-- PROFILE-->
-      <div class="header-profile">
-        <!-- AVATAR-->
-        <div class="profile-avatar">
-          <img src="/img/icons/avatar.svg" alt="avatar" />
+    </header>
+
+    <!--  CONTEÚDO PRINCIPAL-->
+
+    <main id="checkout_page_main_container">
+      <section class="checkout-page-container">
+        <div class="checkout-page-billing-container">
+          <div class="checkout-title-box">
+            <h2>Dados de Pagamento</h2>
+            <hr class="checkout-title-line" />
+          </div>
+          <div class="checkout-billing-name-box">
+            <label for="name" class="checkout-label">Nome Completo</label>
+            <input
+              class="checkout-input"
+              type="text"
+              placeholder="Carlos Alberto"
+            />
+          </div>
+
+          <div class="checkout-billing-birthday-cpf-container">
+            <div class="checkout-box-line">
+              <label for="date" class="checkout-label">
+                Data de Nascimento
+              </label>
+              <input
+                class="checkout-input"
+                type="text"
+                placeholder="21/09/1960"
+              />
+            </div>
+            <div class="checkout-box-line">
+              <label for="CPF" class="checkout-label">CPF</label>
+              <input
+                class="checkout-input"
+                type="text"
+                placeholder="111.222.333-45"
+              />
+            </div>
+          </div>
+          <div class="checkout-address-line-1-box">
+            <div class="zip-box">
+              <label for="zipCode" class="checkout-label">CEP</label>
+              <div class="zip-input-box">
+                <input
+                  class="checkout-input"
+                  id="zip1"
+                  type="text"
+                  placeholder="12345"
+                />
+                <p>-</p>
+                <input
+                  class="checkout-input"
+                  id="zip2"
+                  type="text"
+                  placeholder="678"
+                />
+              </div>
+            </div>
+
+            <div class="city-box">
+              <label for="city" class="checkout-label">Cidade</label>
+              <input class="checkout-input" type="text" placeholder="Barueri" />
+            </div>
+
+            <div class="state-box">
+              <label for="state" class="checkout-label">UF</label>
+              <input class="checkout-input" type="text" placeholder="SP" />
+            </div>
+          </div>
+
+          <div class="checkout-address-line-2-box">
+            <div class="street-box">
+              <label for="street" class="checkout-label">Rua</label>
+              <input
+                class="checkout-input"
+                type="text"
+                placeholder="São Marcos"
+              />
+            </div>
+            <div class="street-number-box">
+              <label for="street_number" class="checkout-label">Nº</label>
+              <input class="checkout-input" type="text" placeholder="547" />
+            </div>
+            <div class="neighborhood-box">
+              <label for="neighborhood" class="checkout-label">Bairro</label>
+              <input
+                class="checkout-input"
+                type="text"
+                placeholder="Parque Viana"
+              />
+            </div>
+          </div>
         </div>
-        <!-- DETAILS -->
-        <div class="profile-details">
-          <p>Olá, visitante</p>
-          <ul>
-            <li class="login-link-header">
-              <a class="profile-links" href="/login">Entrar</a>
-            </li>
-            <li><a class="profile-links" href="#">Registrar</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!--  CONTEÚDO PRINCIPAL-->
-
-  <main>
-    <section>
-
-      <div>
-        <h2>DADOS DE FATURAMENTO</h2>
-        <hr class="checkout-title-line" />
-        <div>
-          <div class="checkout-billing-1">
-
-            <label for="name">
-              <p class="checkout-label-input">NOME COMPLETO</p>
-              <input type="text" placeholder="Ex: Carlos Alberto" />
-            </label>
+        <div class="checkout-page-payment-container">
+          <div class="checkout-title-box">
+            <h2>Pagamento</h2>
+            <hr class="checkout-title-line" />
           </div>
-          <div class="checkout-billing-2">
 
-            <label for="date">
-              <p class="checkout-label-input">DATA DE NASCIMENTO</p>
-              <input type="text" placeholder="Ex: 21/09/1960" />
-            </label>
-            <label for="CPF">
-              <p class="checkout-label-input">CPF</p>
-              <input type="text" placeholder="Ex: 111.222.333-45" />
-            </label>
-          </div>
-          <div class="checkout-billing-3">
+          <div class="checkout-payment-method-selectors-container">
+            <div class="credit-card-method-selector-box">
+              <input
+                class="checkout-radio-input"
+                type="radio"
+                id="credit-card-payment-method"
+                name="payment-method"
+                value="credit-card"
+              />
+              <label
+                class="checkout-radio-label"
+                for="credit-card-payment-method"
+              >
+                Cartão de Crédito
+              </label>
+            </div>
+            <div class="boleto-card-method-selector-box">
+              <input
+                class="checkout-radio-input"
+                type="radio"
+                id="boleto-payment-method"
+                name="payment-method"
+                value="boleto"
+              />
+              <label
+                class="checkout-radio-label"
+                for="boleto-card-payment-method"
+              >
+                Boleto
+              </label>
+            </div>
 
-            <label for="zipCode">
-              <p class="checkout-label-input">CEP</p>
-              <input type="text" placeholder="Ex: 12345-678" />
-            </label>
-            <label for="city">
-              <p class="checkout-label-input">CIDADE</p>
-              <input type="text" placeholder="Ex: Barueri" />
-            </label>
-            <label for="state">
-              <p class="checkout-label-input">UF</p>
-              <input type="text" placeholder="Ex: SP" />
-            </label>
-          </div>
-          <div class="checkout-billing-4">
-
-            <label for="street">
-              <p class="checkout-label-input">RUA</p>
-              <input type="text" placeholder="Ex: São Marcos" />
-            </label>
-            <label for="street_number">
-              <p class="checkout-label-input">Nº</p>
-              <input type="text" placeholder="Ex: 547" />
-            </label>
-            <label for="neighborhood">
-              <p class="checkout-label-input">BAIRRO</p>
-              <input type="text" placeholder="Ex: Parque Viana" />
-            </label>
+            <div class="pix-payment-method-selector-box">
+              <input
+                class="checkout-radio-input"
+                type="radio"
+                id="pix-card-payment-method"
+                name="payment-method"
+                value="pix"
+              />
+              <label class="checkout-radio-label" for="pix-card-payment-method">
+                Pix
+              </label>
+            </div>
+            <div class="paypal-payment-method-selector-box">
+              <input
+                class="checkout-radio-input"
+                type="radio"
+                id="paypal-card-payment-method"
+                name="payment-method"
+                value="credit-card"
+              />
+              <label
+                class="checkout-radio-label"
+                for="paypal-card-payment-method"
+              >
+                PayPal
+              </label>
+            </div>
           </div>
         </div>
-        <div class="checkout-payment">
-          <h2>PAGAMENTO</h2>
-          <hr class="checkout-title-line" />
-          <div class="checkou-payment-credit">
-            <label class="label-radio"for="credit">
-              <input type="radio" name="payment" checked />
-              <p class="checkout-label-input">CARTÃO DE CRÉDITO</p>
-            </label>
-          </div>
-          <div class="checkout-credit-card">
-            <label for="card_number">
-              <p class="checkout-label-input">NÚMERO DO CARTÃO</p>
-              <input type="text" placeholder="Ex: ****.****.****.1234" />
-            </label>
-            <label for="expiration_date">
-              <p class="checkout-label-input">Nº</p>
-              <input type="text" placeholder="Ex: 27/88" />
-            </label>
-            <label for="cvv">
-              <p class="checkout-label-input">CVV</p>
-              <input type="text" placeholder="Ex: 547" />
-            </label>
-          </div>
-          <div class="checkout-bearer">
-            <label class="label-radio">
-              <input type="checkbox" checked />
-              <p class="checkout-label-chekbox">Dados do portador iguais aos pessoais</p>
-            </label>
-          </div>
-          <div class="checkout-payment-type">
-            <label class="label-radio">
-              <input type="radio" name="payment"/>
-              <p class="checkout-label-input">BOLETO</p>
-            </label>
-            <label class="label-radio">
-              <input type="radio" name="payment"/>
-              <p class="checkout-label-input">PAYPAL</p>
-            </label>
-            <label class="label-radio">
-              <input type="radio" name="payment"/>
-              <p class="checkout-label-input">PIX</p>
-            </label>
-          </div>
+      </section>
 
-        </div>
-
-
-    </section>
-
-    <section>
-
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam error, vitae expedita voluptatum quisquam
-      reprehenderit inventore illo magnam. Placeat aut, aliquid odit nemo soluta ipsum impedit quia inventore eos
-      reprehenderit?
-
-    </section>
-
-  </main>
-  <!-- FOOTER -->
-  <footer class="footer-min-container">
-    <a href="/">
-      <img class="footer-min-logo" src="/img/logo/logo-ft.svg" />
-    </a>
-    <p class="footer-copy-2">Todos os direitos reservados &copy; 2021</p>
-  </footer>
-</body>
-
+      <section class="checkout-page-container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam error,
+        vitae expedita voluptatum quisquam reprehenderit inventore illo magnam.
+        Placeat aut, aliquid odit nemo soluta ipsum impedit quia inventore eos
+        reprehenderit?
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer id="main-min-footer" class="footer-min-container">
+      <a href="/">
+        <img class="footer-min-logo" src="/img/logo/logo-ft.svg" />
+      </a>
+      <p class="footer-copy-2">Todos os direitos reservados &copy; 2021</p>
+    </footer>
+  </body>
 </html>
