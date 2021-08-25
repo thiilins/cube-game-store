@@ -1,53 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!-- HEAD -->
-<%- include('../partials/head'); %>
+  <!-- HEAD -->
+  <%- include('../partials/head'); %>
   <link rel="stylesheet" href="/css/cart.css" />
 
   <body>
     <!-- HEADER -->
     <%- include('../partials/header'); %>
-      <!-- MAIN CONTENT -->
-   <main id="cart-main-container">
-  <header id="cart-page-header">
-    <div class="cart-page-title-box">
-      <h1 class="cart-page-header-title">Carrinho</h1>
-      <hr class="cart-page-header-title-line" />
-    </div>
-  </header>
-  <section id="cart-items">
-   
-    <div class="cart-item">
-      <div class="cart-item-img-box">
-        <img src="/img/products/default.jpg" alt="" class="cart-item-img" />
-      </div>
-      <div class="cart-item-details-box">
-        <p class="cart-item-details-name">
-          Efootball Pro Evolution Soccer 2021 - PS4
-        </p>
-        <p class="cart-item-details-sku">ITEM: XXXXXX</p>
-      </div>
-      <div class="cart-item-quantity-container">
-       <div class="prod-quantity-box">
-          <input
-          type="numero"
-          class="prod-quantity-input"
-          name="quantity"
-          id="quantity"
-          value="1"
-        />
-       </div>
-        <a href="#" class="cart-remove-item">Remover</a>
-      </div>
-      <div class="cart-item-price-box">
-        <p class="cart-item-price"><small>R$</small> <span>900,</span><small>00</small></p>
-      </div>
-    </div>
-  </section>
-</main>
+    <!-- MAIN CONTENT -->
+    <main id="cart-main-container">
+      <header id="cart-page-header">
+        <div class="cart-page-title-box">
+          <h1 class="cart-page-header-title">Carrinho</h1>
+          <hr class="cart-page-header-title-line" />
+        </div>
+      </header>
+      <section id="cart-items">
+        <div class="cart-item">
+          <div class="cart-item-img-box">
+            <img src="/img/products/default.jpg" alt="" class="cart-item-img" />
+          </div>
+          <div class="cart-item-details-box">
+            <p class="cart-item-details-name">
+              Efootball Pro Evolution Soccer 2021 - PS4
+            </p>
+            <p class="cart-item-details-sku">ITEM: XXXXXX</p>
+          </div>
+          <div class="cart-item-quantity-container">
+            <div class="prod-quantity-box">
+              <input
+                type="numero"
+                class="prod-quantity-input"
+                name="quantity"
+                id="quantity"
+                value="1"
+              />
+            </div>
+            <a href="#" class="cart-remove-item">Remover</a>
+          </div>
+          <div class="cart-item-price-box">
+            <p class="cart-item-price">
+              <small>R$</small> <span>900,</span><small>00</small>
+            </p>
+          </div>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-img-box">
+            <img src="/img/products/default.jpg" alt="" class="cart-item-img" />
+          </div>
+          <div class="cart-item-details-box">
+            <p class="cart-item-details-name">
+              Efootball Pro Evolution Soccer 2021 - PS4
+            </p>
+            <p class="cart-item-details-sku">ITEM: XXXXXX</p>
+          </div>
+          <div class="cart-item-quantity-container">
+            <div class="prod-quantity-box">
+              <input
+                type="numero"
+                class="prod-quantity-input"
+                name="quantity"
+                id="quantity"
+                value="1"
+              />
+            </div>
+            <a href="#" class="cart-remove-item">Remover</a>
+          </div>
+          <div class="cart-item-price-box">
+            <p class="cart-item-price">
+              <small>R$</small> <span>900,</span><small>00</small>
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="cart-bottom-container">
+        <section class="cart-shipping-coupon-container">
+          <div class="cart-shipping-title">
+            Calcule o frete e prazo de entrega
+            <hr class="cart-shipping-line" />
+          </div>
+          <div class="cart-shipping-container">
+            <div class="cart-shipping-box">
+              <div class="cart-shipping-zipcode-box">
+                <label class="cart-shipping-zipcode-label" for="zip-code">
+                  Insira seu CEP
+                </label>
+                <input
+                  type="text"
+                  name="zip-code"
+                  id="zip-code"
+                  class="cart-zipcode-input"
+                  placeholder="00000-000"
+                />
+                <a href="#" class="error-small-msg forget-zip-code">
+                  Não sei meu cep
+                </a>
+              </div>
 
-      <!-- FOOTER -->
-      <%- include('../partials/footer'); %>
+              <div class="cart-shipping-verify-address-container">
+                <img
+                  src="/img/icons/pin-full.svg"
+                  alt=""
+                  id="street-pin-simulation"
+                />
+                <div id="cart-shipping-verify-address-box">
+                  <p class="cart-shipping-verify-street">Avenida Paulista</p>
+                  <p class="cart-shipping-verify-city">São Paulo - SP</p>
+                  <a href="#" class="error-small-msg">Esta errado?</a>
+                </div>
+              </div>
+            </div>
+            <div class="cart-shipping-selector">
+              <input
+                class="cart-shipping-option-input"
+                type="radio"
+                id="shipping-express"
+                name="shipping-method"
+                value="express"
+              />
+              <label class="cart-shipping-option-label" for="shipping-express">
+                EXPRESSA 99 dias R$99,99
+              </label>
+
+              <input
+                class="cart-shipping-option-input"
+                type="radio"
+                id="shipping-normal"
+                name="shipping-method"
+                value="normal"
+              />
+              <label class="cart-shipping-option-label" for="shipping-normal">
+                NORMAL 99 dias R$99,99
+              </label>
+            </div>
+          </div>
+          <div class="cart-coupon-container">
+            <div class="coupon-text-box">
+              <h2>Insira seu cupom</h2>
+              <p>Caso possua para calcular seu desconto</p>
+            </div>
+            <div class="coupon-input-box">
+              <input
+                class="coupon-input"
+                type="text"
+                name="coupon"
+                id="coupon"
+                placeholder="XXXXXXXXXX"
+              />
+              <button
+                class="coupon-input-btn"
+                type="text"
+                name="coupon"
+                id="coupon"
+              >
+                Aplicar
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="cart-resume-container">
+          <div class="cart-resume-details-container">
+            <div class="cart-resume-items-container">
+              <div class="resume-item-box">
+                <p class="resume-item">
+                  <span class="resume-item-quantity">99</span> PRODUTOS
+                </p>
+                <p class="resume-price">R$ 999,<small>99</small></p>
+              </div>
+              <div class="resume-item-box">
+                <p class="resume-item">
+                  <span class="resume-item-quantity">99</span> PRODUTOS
+                </p>
+                <p class="resume-price">R$ 999,<small>99</small></p>
+              </div>
+            </div>
+            <div class="resume-shipping-container">
+              <p class="resume-shipping-method">Normal</p>
+              <p class="resume-shipping-method-price">
+                R$ 99,<small>99</small>
+              </p>
+            </div>
+            <hr class="resume-item-total-line" />
+            <div class="cart-resume-total-container">
+              <p class="cart-resume-total">Total</p>
+              <p class="cart-resume-price">R$ 999,<small>99</small></p>
+            </div>
+          </div>
+          <div class="cart-buttons-container">
+            <button class="cart-buttons-checkout cart-buttons">
+              FINALIZAR COMPRA
+            </button>
+            <button class="cart-continue-shopping-checkout cart-buttons">
+              CONTINUAR COMPRADO
+            </button>
+          </div>
+        </section>
+        
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <%- include('../partials/footer'); %>
   </body>
-
-</html
+</html>
