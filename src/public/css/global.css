@@ -1,6 +1,6 @@
 :root {
   --primary: #280e4d;
-  --primaryLight: #ccc5d4;
+  --primaryLight: rgba(40, 14, 77, 0.24);
   --acent: #068bbc;
   --color1: #2a3492;
   --color2: #261c58;

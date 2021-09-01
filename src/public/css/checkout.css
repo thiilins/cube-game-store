@@ -102,3 +102,36 @@
 .test-h1 {
   font-size: 1.6rem;
 }
+
+.checkout-page-delivery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.checkout-checkbox-label {
+  color: var(--primary);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.2rem 1rem;
+  font-weight: bold;
+}
+
+.checkout-delivery-opition-checkbox{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  column-gap: 1.5rem;
+  width: 100%;
+  padding: 1.5rem 0rem 1.5rem 0.5rem 
+}
+
+.checkout-checkbox-label-delivery{
+  color: var(--primary);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.2rem 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
