@@ -303,3 +303,78 @@ body {
 }
 
 /* MINHA CONTA */
+
+
+.personal_data_main_container{
+  background-color: #ccc5d4;
+  padding: 25px;
+}
+
+.client-container{
+  width: 25%;
+  padding:10px;
+  align-items: center;
+}
+.client-photo{
+  width: 80px;
+  align-self: center;
+}
+.client-container .button{
+  font-size: 12px;
+  margin: 5px 0;
+  width: 200px;
+
+}
+.dados_pessoais{
+  padding: 5px;
+}
+
+.name_input{
+  display: flex;
+  padding: 5px;
+  width: 80%;
+  margin: 2px;
+}
+
+.date_cpf {
+  display: flex;
+  width: 80%;
+  margin: 2px;
+}
+
+.cpf_date {
+  width: 90%;
+  margin: 2px;
+}
+
+.data_label{
+  color: var(--primary);
+  font-size: var(--input-label-size);
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.2rem 1rem;
+  font-weight: bold;
+}
+.email_infos{
+  width: 100%;
+}
+.email_data{
+  display: flex;
+  margin: 5px;
+  width: 80%;  
+}
+
+.email_input{
+  width: 90%;
+  margin: 2px;
+}
+
+.change_account_password_form{
+  display: flex;
+  padding: 5px;
+  width: 80%;
+}
+
+.change_account_password_input{
+  width: 100%;  
+  padding: 10px;
+}

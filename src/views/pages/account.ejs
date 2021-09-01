@@ -7,7 +7,65 @@
     <!-- HEADER -->
     <%- include('../partials/header'); %>
     <!-- MAIN CONTENT -->
+    <main>
+    <section id="client" class="client-container">
+      <!-- CLIENT PICTURE -->
+       <img src="/img/client/default.png" alt="" class="client-photo" />
+      <!-- CLIENT MENU DETAILS -->
+       <div class="profile-details-cache">
+            <button class="button" data-nlok-ref-guid="5fe66b61-080c-48bd-a5cd-d224eeff24d3">DADOS PESSOAIS</button>
+            <button class="button" data-nlok-ref-guid="5fe66b61-080c-48bd-a5cd-d224eeff24d3">CARTEIRA</button>
+            <button class="button" data-nlok-ref-guid="5fe66b61-080c-48bd-a5cd-d224eeff24d3">MEUS ENDEREÇOS</button>
+            <button class="button" data-nlok-ref-guid="5fe66b61-080c-48bd-a5cd-d224eeff24d3">MEUS PEDIDOS</button>
+            <button class="button" data-nlok-ref-guid="5fe66b61-080c-48bd-a5cd-d224eeff24d3">AJUDA</button>
 
+      <!-- VIEW -->
+      
+        </section>
+    <section class="personal_data_main_container">
+      <div class="dados_pessoais">
+        <h2>Dados Pessoais</h2>
+        <form method="POST">
+          <label class="data_label">NOME COMPLETO</label>
+          <input type="text" placeholder="NOME CLIENTE" class="name_input">
+          <div class="date_cpf">
+            <label class="data_label">DATA DE NASCIMENTO</label>
+            <input type="date" class="cpf_date">
+            <label class="data_label">CPF</label>
+            <input type="text" placeholder="000.000.000-00" class="cpf_date">
+          </div>
+        </form>
+      </div>
+      <br>
+      <br>
+      <div class="email_infos">
+        <h2>ALTERAR EMAIL</h2>
+        <div class="email_data">
+        <div class="register_email">
+          <h3>E-MAIL CADASTRADO</h3>
+          <h2>NOME_CLIENTE@GMAIL.COM</h2>
+        </div>
+        <form method="POST" class="change_email">
+          <label class="data_label">NOVO E-MAIL</label>
+          <input type="text" placeholder="example@example.com" class="email_input">
+          <label class="data_label">CONFIRMAR E-MAIL</label>
+          <input type="text" placeholder="example@example.com" class="email_input">
+        </form>
+      </div>
+      </div>
+      <div class="change_accoount_password">
+        <h2>ALTERAR SENHA</h2>
+        <form method="POST" class="change_account_password_form">
+          <label class="data_label">SENHA ATUAL</label>
+          <input type="text" placeholder="********" class="change_account_password_input">
+          <label class="data_label">NOVA SENHA</label>
+          <input type="text" placeholder="********" class="change_account_password_input">
+          <label class="data_label">CONFIRMAR SENHA</label>
+          <input type="text" placeholder="********" class="change_account_password_input">
+        </form>
+      </div>
+    </section>
+    </main>
     <!-- FOOTER -->
     <%- include('../partials/footer'); %>
   </body>
