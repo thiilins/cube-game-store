@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <!-- HEAD -->
-  <%- include('../partials/head'); %>
+<!-- HEAD -->
+<%- include('../partials/head'); %>
+  <link rel="stylesheet" href="/css/account.css" />
 
   <body>
     <!-- HEADER -->
     <%- include('../partials/header'); %>
-    <!-- MAIN CONTENT -->
-    <main>
-    <section id="client" class="client-container">
-      <!-- CLIENT PICTURE -->
-       <img src="/img/client/default.png" alt="" class="client-photo" />
-      <!-- CLIENT MENU DETAILS -->
-       <div class="profile-details-cache">
-            <button class="button" data-nlok-ref-guid="5fe66b61-080c-48bd-a5cd-d224eeff24d3">DADOS PESSOAIS</button>
-            <button class="button" data-nlok-ref-guid="5fe66b61-080c-48bd-a5cd-d224eeff24d3">CARTEIRA</button>
-            <button class="button" data-nlok-ref-guid="5fe66b61-080c-48bd-a5cd-d224eeff24d3">MEUS ENDEREÇOS</button>
-            <button class="button" data-nlok-ref-guid="5fe66b61-080c-48bd-a5cd-d224eeff24d3">MEUS PEDIDOS</button>
-            <button class="button" data-nlok-ref-guid="5fe66b61-080c-48bd-a5cd-d224eeff24d3">AJUDA</button>
+      <!-- MAIN CONTENT -->
+      <main id="account-page-main-container">
+        <aside id="client" class="client-container">
+          <!-- CLIENT PICTURE -->
+          <img src="/img/client/default.png" alt="" class="client-photo" />
+          <!-- CLIENT MENU DETAILS -->
+          <div class="account-page-buttons-container">
+            <button class="button">DADOS PESSOAIS</button>
+            <button class="button">CARTEIRA</button>
+            <button class="button">MEUS ENDEREÇOS</button>
+            <button class="button">MEUS PEDIDOS</button>
+            <button class="button">AJUDA</button>
+        </aside>
+        <!-- VIEW -->
 
-      <!-- VIEW -->
-      
-        </section>
-    <section class="personal_data_main_container">
-      <div class="dados_pessoais">
-        <h2>Dados Pessoais</h2>
-        <form method="POST">
-          <label class="data_label">NOME COMPLETO</label>
-          <input type="text" placeholder="NOME CLIENTE" class="name_input">
-          <div class="date_cpf">
-            <label class="data_label">DATA DE NASCIMENTO</label>
-            <input type="date" class="cpf_date">
-            <label class="data_label">CPF</label>
-            <input type="text" placeholder="000.000.000-00" class="cpf_date">
+        <section class="personal_data_main_container">
+          <div class="dados_pessoais">
+            <div class="account-personal-data-title">
+              <h2>Dados Pessoais</h2>
+              <hr class="account-page-line">
+            </div>
+
+       <div class="account-personal-data-form-box">
+              <div class="account-personal-data-name">
+              <label for="name" class="data-label">Nome completo</label>
+              <input type="text" name="name" id="name" placeholder="Ex: Alberto Soares" class="name_input">
+            </div>
+            <div class="date-cpf">
+              <div class="account-personal-birth">
+                <label class="data-label">DATA DE NASCIMENTO</label>
+                <input type="date" class="cpf_date">
+              </div>
+         <div class="account-personal-data-cpf">     
+           <label class="data-label">CPF</label>
+              <input type="text" placeholder="000.000.000-00" class="cpf_date">
+            </div>
+            </div>
+
+       </div>
           </div>
-        </form>
-      </div>
-      <br>
-      <br>
-      <div class="email_infos">
-        <h2>ALTERAR EMAIL</h2>
-        <div class="email_data">
-        <div class="register_email">
-          <h3>E-MAIL CADASTRADO</h3>
-          <h2>NOME_CLIENTE@GMAIL.COM</h2>
-        </div>
-        <form method="POST" class="change_email">
-          <label class="data_label">NOVO E-MAIL</label>
-          <input type="text" placeholder="example@example.com" class="email_input">
-          <label class="data_label">CONFIRMAR E-MAIL</label>
-          <input type="text" placeholder="example@example.com" class="email_input">
-        </form>
-      </div>
-      </div>
-      <div class="change_accoount_password">
-        <h2>ALTERAR SENHA</h2>
-        <form method="POST" class="change_account_password_form">
-          <label class="data_label">SENHA ATUAL</label>
-          <input type="text" placeholder="********" class="change_account_password_input">
-          <label class="data_label">NOVA SENHA</label>
-          <input type="text" placeholder="********" class="change_account_password_input">
-          <label class="data_label">CONFIRMAR SENHA</label>
-          <input type="text" placeholder="********" class="change_account_password_input">
-        </form>
-      </div>
-    </section>
-    </main>
-    <!-- FOOTER -->
-    <%- include('../partials/footer'); %>
+          <br>
+          <br>
+          <div class="email_infos">
+            <h2>ALTERAR EMAIL</h2>
+            <div class="email_data">
+              <div class="register_email">
+                <h3>E-MAIL CADASTRADO</h3>
+                <h2>NOME_CLIENTE@GMAIL.COM</h2>
+              </div>
+              <form method="POST" class="change_email">
+                <label class="data_label">NOVO E-MAIL</label>
+                <input type="text" placeholder="example@example.com" class="email_input">
+                <label class="data_label">CONFIRMAR E-MAIL</label>
+                <input type="text" placeholder="example@example.com" class="email_input">
+              </form>
+            </div>
+          </div>
+          <div class="change_accoount_password">
+            <h2>ALTERAR SENHA</h2>
+            <form method="POST" class="change_account_password_form">
+              <label class="data_label">SENHA ATUAL</label>
+              <input type="text" placeholder="********" class="change_account_password_input">
+              <label class="data_label">NOVA SENHA</label>
+              <input type="text" placeholder="********" class="change_account_password_input">
+              <label class="data_label">CONFIRMAR SENHA</label>
+              <input type="text" placeholder="********" class="change_account_password_input">
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- FOOTER -->
+      <%- include('../partials/footer'); %>
   </body>
+
 </html>
