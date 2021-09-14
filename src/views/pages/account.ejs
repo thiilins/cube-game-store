@@ -1,84 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!-- HEAD -->
-<%- include('../partials/head'); %>
-  <link rel="stylesheet" href="/css/account.css" />
+  <%- include('../partials/head'); %>
 
   <body>
-    <!-- HEADER -->
     <%- include('../partials/header'); %>
-      <!-- MAIN CONTENT -->
-      <main id="account-page-main-container">
-        <aside id="client" class="client-container">
-          <!-- CLIENT PICTURE -->
-          <img src="/img/client/default.png" alt="" class="client-photo" />
-          <!-- CLIENT MENU DETAILS -->
-          <div class="account-page-buttons-container">
-            <button class="button">DADOS PESSOAIS</button>
-            <button class="button">CARTEIRA</button>
-            <button class="button">MEUS ENDEREÇOS</button>
-            <button class="button">MEUS PEDIDOS</button>
-            <button class="button">AJUDA</button>
-        </aside>
-        <!-- VIEW -->
+    <div id="account_page_main_container">
+      <aside id="client" class="client-container">
+        <div
+          class="account-image-avatar-box"
+          style="background-image: url(/img/avatars/01.jpg)"
+        >
+          <div class="account-image-change-avatar-box">
+            <img
+              src="/img/icons/change-pic.svg"
+              class="account-image-change-avatar-icon"
+              alt=""
+            />
+          </div>
+        </div>
 
-        <section class="personal_data_main_container">
-          <div class="dados_pessoais">
-            <div class="account-personal-data-title">
-              <h2>Dados Pessoais</h2>
-              <hr class="account-page-line">
-            </div>
+        <div class="account-page-buttons-container">
+          <button class="button">DADOS PESSOAIS</button>
+          <button class="button">CARTEIRA</button>
+          <button class="button">MEUS ENDEREÇOS</button>
+          <button class="button">MEUS PEDIDOS</button>
+          <button class="button">AJUDA</button>
+        </div>
+      </aside>
 
-       <div class="account-personal-data-form-box">
-              <div class="account-personal-data-name">
+      <main class="personal-data-main-container">
+        <section class="personal-data-container rel">
+          <div class="account-personal-data-title-box">
+            <h2>Dados Pessoais</h2>
+            <hr class="account-page-line" />
+          </div>
+          <div class="account-data-form-col-box">
+            <div class="input-data-box">
               <label for="name" class="data-label">Nome completo</label>
-              <input type="text" name="name" id="name" placeholder="Ex: Alberto Soares" class="name_input">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ex: Alberto Soares"
+                class="name-input"
+              />
             </div>
-            <div class="date-cpf">
-              <div class="account-personal-birth">
+            <div class="date-cpf-container">
+              <div class="input-data-box half-box">
                 <label class="data-label">DATA DE NASCIMENTO</label>
-                <input type="date" class="cpf_date">
+                <input type="date" class="cpf-date" />
               </div>
-         <div class="account-personal-data-cpf">     
-           <label class="data-label">CPF</label>
-              <input type="text" placeholder="000.000.000-00" class="cpf_date">
+              <div class="input-data-box half-box">
+                <label class="data-label">CPF</label>
+                <input
+                  type="text"
+                  placeholder="000.000.000-00"
+                  class="cpf-date"
+                />
+              </div>
             </div>
-            </div>
+          </div>
+          <button class="account-save-data-btn">Salvar</button>
+        </section>
 
-       </div>
-          </div>
-          <br>
-          <br>
-          <div class="email_infos">
+        <section class="account-email-data-container rel">
+          <div class="account-email-data-title-box">
             <h2>ALTERAR EMAIL</h2>
-            <div class="email_data">
-              <div class="register_email">
-                <h3>E-MAIL CADASTRADO</h3>
-                <h2>NOME_CLIENTE@GMAIL.COM</h2>
-              </div>
-              <form method="POST" class="change_email">
-                <label class="data_label">NOVO E-MAIL</label>
-                <input type="text" placeholder="example@example.com" class="email_input">
-                <label class="data_label">CONFIRMAR E-MAIL</label>
-                <input type="text" placeholder="example@example.com" class="email_input">
-              </form>
+            <hr class="account-page-line" />
+          </div>
+          <div class="account-data-form-row-box">
+            <div class="input-data-box third-box">
+              <h3 class="data-label">E-MAIL CADASTRADO</h3>
+              <h2>NOME-CLIENTE@GMAIL.COM</h2>
+            </div>
+            <div class="input-data-box third-box">
+              <label class="data-label">NOVO E-MAIL</label>
+              <input
+                type="text"
+                placeholder="example@example.com"
+                class="email-input"
+              />
+            </div>
+            <div class="input-data-box third-box">
+              <label class="data-label">CONFIRMAR E-MAIL</label>
+              <input
+                type="text"
+                placeholder="example@example.com"
+                class="email-input"
+              />
             </div>
           </div>
-          <div class="change_accoount_password">
+          <button class="account-save-data-btn">Salvar</button>
+        </section>
+        <section class="account-password-data-container rel">
+          <div class="account-password-data-title">
             <h2>ALTERAR SENHA</h2>
-            <form method="POST" class="change_account_password_form">
-              <label class="data_label">SENHA ATUAL</label>
-              <input type="text" placeholder="********" class="change_account_password_input">
-              <label class="data_label">NOVA SENHA</label>
-              <input type="text" placeholder="********" class="change_account_password_input">
-              <label class="data_label">CONFIRMAR SENHA</label>
-              <input type="text" placeholder="********" class="change_account_password_input">
-            </form>
+            <hr class="account-page-line" />
           </div>
+          <div class="account-data-form-row-box">
+            <div class="input-data-box third-box">
+              <label class="data-label">SENHA ATUAL</label>
+              <input
+                type="text"
+                placeholder="********"
+                class="change-account-password-input"
+              />
+            </div>
+            <div class="input-data-box third-box">
+              <label class="data-label">NOVA SENHA</label>
+              <input
+                type="text"
+                placeholder="********"
+                class="change-account-password-input"
+              />
+            </div>
+            <div class="input-data-box third-box">
+              <label class="data-label">CONFIRMAR SENHA</label>
+              <input
+                type="text"
+                placeholder="********"
+                class="change-account-password-input"
+              />
+            </div>
+          </div>
+          <button class="account-save-data-btn">Salvar</button>
         </section>
       </main>
-      <!-- FOOTER -->
-      <%- include('../partials/footer'); %>
+    </div>
+    <!-- FOOTER -->
+    <%- include('../partials/footer'); %>
   </body>
-
 </html>

@@ -1180,3 +1180,153 @@ a.cart-remove-item:hover {
 .ft-social-icon {
   width: 3rem;
 }
+/* MINHA CONTA */
+#account_page_main_container {
+  display: flex;
+  min-height: 98vh;
+}
+.personal-data-main-container {
+  background-color: #ccc5d4;
+  padding: 3rem 6rem;
+  width: 80%;
+  gap: 4rem;
+}
+
+.client-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  padding-top: 5rem;
+  gap: 3rem;
+}
+.account-page-buttons-container,
+.personal-data-main-container {
+  display: flex;
+  flex-direction: column;
+}
+.client-photo {
+  width: 80px;
+  align-self: center;
+}
+.client-container .button {
+  font-size: 12px;
+  margin: 5px 0;
+  width: 200px;
+}
+
+.data-label {
+  color: var(--primary);
+  font-size: var(--input-label-size);
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.2rem 1rem;
+  font-weight: bold;
+}
+
+.change-account-password-form {
+  display: flex;
+  padding: 5px;
+  width: 80%;
+}
+
+.change-account-password-input {
+  width: 100%;
+  padding: 10px;
+}
+
+.personal-data-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+.personal-data-main-container h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+.account-page-line {
+  background-color: var(--primary);
+  border: 0.1rem solid var(--primary);
+}
+.account-data-form-col-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 85%;
+  gap: 2rem;
+}
+.account-data-form-row-box {
+  display: flex;
+  max-width: 85%;
+  padding-top: 3rem;
+  gap: 2rem;
+  align-items: center;
+}
+.input-data-box {
+  display: flex;
+  flex-direction: column;
+}
+.data-label {
+  font-size: 1.2rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+.date-cpf-container {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.half-box {
+  width: 50%;
+}
+.third-box {
+  width: calc(100% / 3);
+}
+.main-data-container {
+  display: flex;
+}
+.rel {
+  position: relative;
+}
+.account-save-data-btn {
+  width: 10rem;
+  height: 3rem;
+  padding: 0;
+  position: absolute;
+  top: 0.95rem;
+  right: 0;
+  font-size: 1.6rem;
+  border-radius: 0.7rem;
+}
+.account-image-avatar-box {
+  background-color: var(--primary);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10rem;
+  border: 0.3rem solid var(--primary);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.account-image-change-avatar-box {
+  display: grid;
+  place-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--primary);
+  border-radius: 3rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+  cursor: pointer;
+}
+.account-image-change-avatar-box:hover {
+  transform: scale(1.1);
+}
+.account-image-change-avatar-icon {
+  width: 3rem;
+  height: 3rem;
+}
