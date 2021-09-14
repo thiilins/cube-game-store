@@ -1200,11 +1200,29 @@ a.cart-remove-item:hover {
   padding-top: 5rem;
   gap: 3rem;
 }
-.account-page-buttons-container,
+.account-page-menu-buttons-container,
 .personal-data-main-container {
   display: flex;
   flex-direction: column;
 }
+.account-page-menu-buttons-container {
+  gap: 0.2rem;
+}
+.account-menu-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+.account-menu-button > span {
+  display: flex;
+  font-size: 1.8rem;
+  align-items: center;
+}
+.account-menu-button > span::before {
+  margin-right: 0.8rem;
+}
+
 .client-photo {
   width: 80px;
   align-self: center;
@@ -1329,4 +1347,32 @@ a.cart-remove-item:hover {
 .account-image-change-avatar-icon {
   width: 3rem;
   height: 3rem;
+}
+
+/*  ICONES */
+
+.i-personal::before {
+  content: "\f508";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.i-wallet::before {
+  content: "\f555";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.i-address::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.i-orders::before {
+  content: "\f291";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.i-help::before {
+  content: "\f059";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
