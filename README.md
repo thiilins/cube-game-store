@@ -22,7 +22,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/thiilins/cube-game-store?color=280E4D&style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/thiilins/cube-game-store?color=280E4D&style=for-the-badge)
 [![License](https://img.shields.io/github/license/thiilins/cube-game-store?color=280E4D&style=for-the-badge)](https://github.com/thiilins/cube-game-store/blob/main/LICENSE)
-[![Repository Size](https://img.shields.io/github/repo-size/thiilins/pokedex?style=for-the-badge&color=280E4D)](https://img.shields.io/github/repo-size/thiilins/pokedex?style=for-the-badge&color=ef5350)
+[![Repository Size](https://img.shields.io/github/repo-size/thiilins/cube-game-store?style=for-the-badge&color=280E4D)](https://img.shields.io/github/repo-size/thiilins/cube-game-store?style=for-the-badge&color=ef5350)
 
   <p align="center">
     Projeto desenvolvido pelo grupo 4 durante o curso Desenvolvimento Web Fullstack  (Digital House)
