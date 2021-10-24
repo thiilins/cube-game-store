@@ -46,7 +46,7 @@
 <br>
 <br>
 Como projeto integrador (projeto desenvolvido durante todo o decorrer do curso e a ser entregue ao final como comprovação para certificação) foi nos dado o desafio de desenvolver uma plataforma de ecommerce, em que o tema seria a nossa escolha e onde iríamos criando e refatorando o código a cada nova tecnologia/módulo que fossemos aprendendo.
-
+<br>
 Optamos então pela criação de um ecommerce de jogos de mesa, onde iriamos trabalhar desde o desenvolvimento da identidade visual até a finalização e deploy.
 
 <p align="right">(<a href="#top">voltar ao topo</a>)</p>
@@ -120,8 +120,8 @@ Desenvolvedores responsáveis por esse projeto
 
 ## :memo: Licença
 
-Este projeto está sob licença MIT. Veja o arquiv `LICENSE.txt` para maiores informações.
+Este projeto está sob licença MIT. Veja o arquivo `LICENSE.txt` para maiores informações.
 
-Project Link: [https://github.com/thiilins/cube-game-store](https://github.com/thiilins/cube-game-store)
+Link do Projeto: [https://github.com/thiilins/cube-game-store](https://github.com/thiilins/cube-game-store)
 
 <p align="right">(<a href="#top">voltar ao topo</a>)</p>
