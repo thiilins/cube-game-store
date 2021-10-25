@@ -4,9 +4,9 @@
   "description": "Projeto integrador desenvolvido durante o curso Desenvolvimento Web Full Stack Digital House",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "./node_modules/.bin/nodemon app.js",
-    "dev2": "nodemon app.js"
+    "start": "node src/app.js",
+    "dev": "./node_modules/.bin/nodemon src/aapp.js",
+    "dev2": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,12 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "method-override": "^3.0.0",
+    "mysql2": "^2.3.2",
+    "sequelize": "^6.8.0",
     "uuidv4": "^6.2.11"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "sequelize-cli": "^6.2.0"
   }
 }
