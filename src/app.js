@@ -13,7 +13,10 @@ const path = require("path");
 //*?_method=PUT
 const methodOverride = require("method-override");
 app.use(methodOverride("_method"));
-
+// Importando o Express Session
+const session = require("express-session");
+// Importando o morgan (logger)
+const logger = require("morgan");
 /**
  *
  * Importando e instanciandoas rotas
@@ -44,6 +47,17 @@ app.set("views", path.resolve("src", "views"));
  *
  *
  */
+//Habilitando logger
+app.use(logger("dev"));
+//Habilitando a sessão 
+app.use(
+  session({
+    secret: "6F8F658AU35KLA95DFC0FB",
+    resave: true,
+    saveUninitialized: true,
+    cookies: { secure: "auto", maxAge: 21600000 },
+  })
+);
 //liberando acesso a pasta public
 app.use(express.static(path.resolve("src", "public")));
 //Configurando recebimento de JSON

@@ -87,6 +87,11 @@ $ npm install
 $ npm start
 
 # O app vai inicializar em <http://localhost:3000>
+
+### Usuario Administrador (Para testes) ###
+# Usuário: admin@admin.com.br
+# Senha: 123456
+###
 ```
 
 ## :sparkles: Etapas

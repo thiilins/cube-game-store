@@ -1,17 +1,8 @@
-const auth = {
-  verify(req, res, next) {
-    if (typeof req.session.user != "undefined") {
-      return next();
-    } else {
-      return res.redirect("/login");
-    }
-  },
-  login(req, res, next) {
-    if (typeof req.session.user == "undefined") {
-      return next();
-    } else {
-      return res.redirect("/sucesso");
-    }
-  },
+module.exports = (req, res, next) => {
+  const { user } = req.session;
+  if (typeof user != "undefined") {
+    res.locals.user = user;
+    return next();
+  }
+  return res.redirect("/login");
 };
-module.exports = auth;
