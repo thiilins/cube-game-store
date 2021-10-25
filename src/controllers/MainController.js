@@ -11,7 +11,7 @@ const MainController = {
     res.render("pages/account", { page: "Minha Conta" });
   },
   loginRedirect: (req, res) => {
-    res.redirect("/auth/login");
+    res.redirect("/auth/entrar");
   },
   checkout: (req, res) => {
     res.render("pages/checkout", { page: "Finalizar Compra" });
