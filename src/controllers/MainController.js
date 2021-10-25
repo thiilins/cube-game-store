@@ -14,7 +14,7 @@ const MainController = {
     res.redirect("/auth/login");
   },
   checkout: (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..", "views", "checkout.html"));
+    res.render("pages/checkout", { page: "Finalizar Compra" });
   },
   cart: (req, res) => {
     res.render("pages/cart", { page: "Carrinho" });
