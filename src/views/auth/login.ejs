@@ -15,27 +15,31 @@
           <h3>Entrar</h3>
           <hr class="login-line" />
         </div>
-        <div class="login-inputs">
-          <div class="login-email-input">
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="usuario@dominio.com.br"
-            />
+        <span class="error-alert">
+          <%= typeof error != 'undefined' ? page : ''%>
+        </span>
+        <form action="/auth/login" method="POST">
+          <div class="login-inputs">
+            <div class="login-email-input">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="usuario@dominio.com.br"
+              />
+            </div>
+            <div class="login-password-input">
+              <label for="senha">Senha</label>
+              <input
+                type="password"
+                name="senha"
+                placeholder="digite sua senha"
+              />
+              <a id="forget-password-text" href="#">Esqueceu a senha?</a>
+            </div>
+            <button class="login-btn dark">Entrar</button>
           </div>
-          <div class="login-password-input">
-            <label for="password">Senha</label>
-            <input
-              type="password"
-              name="password"
-              placeholder="digite sua senha"
-            />
-            <a id="forget-password-text" href="#">Esqueceu a senha?</a>
-          </div>
-          <button class="login-btn dark">Entrar</button>
-        </div>
-
+        </form>
         <div class="register-button-box">
           <p id="not-account-text" href="#">Não possui conta?</p>
           <button class="dark">Cadastre-se</button>
