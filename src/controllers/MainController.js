@@ -7,21 +7,24 @@ const MainController = {
   indexRedirect: (req, res) => {
     res.redirect("/");
   },
-
-  loginTest: (req, res) => {
-    res.sendFile(path.resolve(__dirname, "..", "views", "login.html"));
-  },
   account: (req, res) => {
     res.render("pages/account", { page: "Minha Conta" });
   },
-  login: (req, res) => {
-    res.render("pages/login", { page: "Login" });
+  loginRedirect: (req, res) => {
+    res.redirect("/auth/login");
   },
-   checkout: (req, res) => {
+  checkout: (req, res) => {
     res.sendFile(path.resolve(__dirname, "..", "views", "checkout.html"));
   },
   cart: (req, res) => {
     res.render("pages/cart", { page: "Carrinho" });
+  },
+  product: (req, res) => {
+    res.render("pages/product", { page: "Produto" });
+  },
+  category: (req, res) => {
+    // res.render("pages/category", { page: "Categoria" });
+    res.render("pages/maintenance");
   },
 };
 module.exports = MainController;
