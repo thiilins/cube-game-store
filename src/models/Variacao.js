@@ -54,7 +54,7 @@ module.exports = (connection, DataTypes) => {
     });
     Variacao.hasMany(models.ItemPedido, {
       foreignKey: "variacao_id",
-      as: "vendas",
+      as: "vendidos",
       onDelete: "cascade",
     });
   };
