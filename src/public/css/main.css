@@ -289,8 +289,8 @@
   padding: 1rem;
   display: none;
   grid-template-areas:
-    'row1 row1'
-    'col1 col2';
+    "row1 row1"
+    "col1 col2";
   grid-template-columns: 70% 30%;
   align-items: center;
   justify-content: center;
@@ -541,10 +541,10 @@ input.prod-quantity-input::placeholder {
   max-width: 6rem;
 }
 .prod-quantity-box::before {
-  content: '\f053';
+  content: "\f053";
   display: flex;
   align-items: center;
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 3rem;
   background-color: var(--primary);
@@ -554,10 +554,10 @@ input.prod-quantity-input::placeholder {
   cursor: pointer;
 }
 .prod-quantity-box::after {
-  content: '\f054';
+  content: "\f054";
   display: flex;
   align-items: center;
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 3rem;
   background-color: var(--primary);
@@ -817,7 +817,7 @@ input#quantity {
   transform: scale(1.1);
 }
 .cart-item-img-box:hover::after {
-  content: '';
+  content: "";
   max-width: 100%;
   max-height: 100%;
   height: 20rem;
@@ -1342,27 +1342,162 @@ a.cart-remove-item:hover {
 /*  ICONES */
 
 .i-personal::before {
-  content: '\f508';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f508";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 .i-wallet::before {
-  content: '\f555';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f555";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 .i-address::before {
-  content: '\f3c5';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 .i-orders::before {
-  content: '\f291';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f291";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 .i-help::before {
-  content: '\f059';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f059";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
+}
+/* FINALIZAR COMPRA */
+#checkout_page_main_container {
+  display: flex;
+  column-gap: 1.1rem;
+  padding: 1.7rem 0;
+  min-height: 70vh;
+}
+.checkout-page-container {
+  background-color: var(--primaryLight);
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.checkout-page-billing-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout-title-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.checkout-billing-name-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-billing-birthday-cpf-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+}
+.checkout-address-line-1-box {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 0.5fr;
+  column-gap: 1.5rem;
+  width: 100%;
+}
+.zip-input-box {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 5.8fr 0.2fr 3fr;
+  column-gap: 1.5rem;
+}
+.zip-input-box > p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.checkout-address-line-2-box {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 1.5fr;
+  column-gap: 1.5rem;
+  width: 100%;
+}
+.checkout-payment-method-selectors-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  column-gap: 1.5rem;
+  width: 100%;
+  padding: 1.5rem 0rem;
+}
+.checkout-box-line {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.checkout-input {
+  width: 100%;
+}
+
+.checkout-label {
+  color: var(--primary);
+  font-size: var(--input-label-size);
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.2rem 1rem;
+  font-weight: bold;
+}
+
+.checkout-radio-label {
+  color: var(--primary);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.2rem 1rem;
+  font-weight: bold;
+}
+.label-radio {
+  display: flex;
+  flex-direction: row;
+}
+
+.test-h1 {
+  font-size: 1.6rem;
+}
+
+.checkout-page-delivery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout-checkbox-label {
+  color: var(--primary);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.2rem 1rem;
+  font-weight: bold;
+}
+
+.checkout-delivery-opition-checkbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  column-gap: 1.5rem;
+  width: 100%;
+  padding: 1.5rem 0rem 1.5rem 0.5rem;
+}
+
+.checkout-checkbox-label-delivery {
+  color: var(--primary);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0 0.2rem 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
 }
