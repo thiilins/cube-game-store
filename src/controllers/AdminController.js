@@ -1,7 +1,7 @@
 const AdminController = {
   dashboardPage(req, res) {
     res.render("admin/dashboard", {
-      file: "index",
+      file: "partials/index",
       page: "Painel Administrativo",
     });
   },

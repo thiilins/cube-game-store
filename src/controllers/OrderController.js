@@ -1,5 +1,5 @@
 const OrderController = {
-  CreateOrderPage(req, res) {
+  createOrderPage(req, res) {
     try {
       return res.render("admin/dashboard", {
         file: "orders/create",
@@ -29,11 +29,11 @@ const OrderController = {
       console.log(error);
     }
   },
-  EditOrderPage(req, res) {
+  editOrderPage(req, res) {
     try {
       return res.render("admin/dashboard", {
         file: "orders/edit",
-        page: "Editar Pedido:",
+        page: "Editando Pedido:",
       });
     } catch (error) {
       console.log(error);

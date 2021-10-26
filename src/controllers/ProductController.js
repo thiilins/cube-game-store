@@ -1,5 +1,5 @@
 const ProductController = {
-  CreateProductPage(req, res) {
+  createProductPage(req, res) {
     try {
       return res.render("admin/dashboard", {
         file: "products/create",
@@ -29,11 +29,11 @@ const ProductController = {
       console.log(error);
     }
   },
-  EditProductPage(req, res) {
+  editProductPage(req, res) {
     try {
       return res.render("admin/dashboard", {
         file: "products/edit",
-        page: "Editar Produto",
+        page: "Editando:",
       });
     } catch (error) {
       console.log(error);

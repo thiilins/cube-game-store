@@ -1,5 +1,5 @@
 const CategoryController = {
-  CreateCategoryPage(req, res) {
+  createCategoryPage(req, res) {
     try {
       return res.render("admin/dashboard", {
         file: "categories/create",
@@ -25,11 +25,11 @@ const CategoryController = {
       page: "",
     });
   },
-  async EditCategoryPage(req, res) {
+  async editCategoryPage(req, res) {
     try {
       return res.render("admin/dashboard", {
         file: "categories/edit",
-        page: "Editar Categoria",
+        page: "Editando Categoria:",
       });
     } catch (error) {
       console.log(error);

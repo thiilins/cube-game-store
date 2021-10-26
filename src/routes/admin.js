@@ -7,7 +7,7 @@ const ProductController = require("../controllers/ProductController");
 const UserController = require("../controllers/UserController");
 const CategoryController = require("../controllers/CategoryController");
 
-router.use(isLogin);
+// router.use(isLogin);
 /**
  *
  *  EXIBIR PAGINAS (VIEWS)
@@ -17,24 +17,28 @@ router.use(isLogin);
 router.get("/", AdminController.dashboardPage);
 // USUARIOS
 router.get("/usuarios", UserController.listUserPage);
-router.get("/usuario/:id", UserController.viewUserPage);
-router.get("/usuario/:id/editar", UserController.EditUserPage);
-router.get("/usuarios/criar", UserController.CreateUserPage);
+router.get("/usuarios/criar", UserController.createUserPage);
+router.get("/usuarios/editar/:id", UserController.editUserPage);
+router.get("/usuarios/:id", UserController.viewUserPage);
+
 //PRODUTO
 router.get("/produtos", ProductController.listProductPage);
-router.get("/produto/:id", ProductController.viewProductPage);
-router.get("/produto/:id/editar", ProductController.EditProductPage);
-router.get("/produto/criar", ProductController.CreateProductPage);
+router.get("/produtos/criar", ProductController.createProductPage);
+router.get("/produtos/editar/:id", ProductController.editProductPage);
+router.get("/produtos/:id", ProductController.viewProductPage);
+
 // CATEGORIA
 router.get("/categorias", CategoryController.listCategoryPage);
-router.get("/categoria/:id", CategoryController.viewCategoryPage);
-router.get("/categoria/:id/editar", CategoryController.EditCategoryPage);
-router.get("/categoria/criar", CategoryController.CreateCategoryPage);
+router.get("/categorias/criar", CategoryController.createCategoryPage);
+router.get("/categorias/editar/:id", CategoryController.editCategoryPage);
+router.get("/categorias/:id", CategoryController.viewCategoryPage);
+
 // PEDIDO
 router.get("/pedidos", OrderController.listOrderPage);
-router.get("/pedido/:id", OrderController.viewOrderPage);
-router.get("/pedido/:id/editar", OrderController.EditOrderPage);
-router.get("/pedido/criar", OrderController.CreateOrderPage);
+router.get("/pedidos/criar", OrderController.createOrderPage);
+router.get("/pedidos/editar/:id", OrderController.editOrderPage);
+router.get("/pedidos/:id", OrderController.viewOrderPage);
+
 /**
  *
  *  AÇÕES(EDITAR/EXCLUIR/CRIAR)
