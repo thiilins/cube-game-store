@@ -47,7 +47,7 @@ const AuthController = {
         sobrenome: user.sobrenome,
       };
       if (user.tipo_usuario == 1) {
-        user.admin = true;
+        req.session.user.admin = true;
         return res.redirect("/admin");
       } else {
         user.admin = false;

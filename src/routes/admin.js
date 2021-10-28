@@ -19,7 +19,7 @@ const CategoryController = require("../controllers/CategoryController");
 router.get("/", AdminController.dashboardPage);
 // USUARIOS
 router.get("/usuarios", UserController.listUserPage);
-router.get("/usuarios/criar", UserController.createUserPage);
+router.get("/usuarios/:id", UserController.viewUserPage);
 router.get("/usuarios/editar/:id", UserController.editUserPage);
 router.get("/usuarios/:id", UserController.viewUserPage);
 
