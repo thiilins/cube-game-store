@@ -1,8 +1,8 @@
 module.exports = (req, res, next) => {
   const { user } = req.session;
-  if (typeof user != "undefined") {
+  if (user.admin) {
     res.locals.user = user;
     return next();
   }
-  return res.redirect("/login");
+  return res.redirect("/");
 };

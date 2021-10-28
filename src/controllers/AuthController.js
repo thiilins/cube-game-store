@@ -1,5 +1,5 @@
 const { Usuario } = require("../models");
-const crypto = require("../middlewares/crypto");
+const crypto = require("../helpers/crypto");
 const AuthController = {
   loginPage(req, res) {
     res.render("auth/login", { page: "Login" });
@@ -42,10 +42,15 @@ const AuthController = {
           error: "Usuário ou Senha inválidos por favor tente novamente",
         });
       }
-      req.session.user = user;
-      if (user.tipo_usuario) {
+      req.session.user = {
+        nome: user.nome,
+        sobrenome: user.sobrenome,
+      };
+      if (user.tipo_usuario == 1) {
+        user.admin = true;
         return res.redirect("/admin");
       } else {
+        user.admin = false;
         return res.redirect("/");
       }
     } catch (error) {
@@ -58,8 +63,7 @@ const AuthController = {
     }
   },
   logout(req, res) {
-    res.clearCookie();
-    delete req.session.user;
+    req.session.destroy();
     return res.redirect("/login");
   },
 };

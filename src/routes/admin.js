@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const isLogin = require("../middlewares/auth");
+const auth = require("../middlewares/auth");
+const acessLevel = require("../middlewares/acessLevel");
 const AdminController = require("../controllers/AdminController");
 const OrderController = require("../controllers/OrderController");
 const ProductController = require("../controllers/ProductController");
@@ -8,6 +9,7 @@ const UserController = require("../controllers/UserController");
 const CategoryController = require("../controllers/CategoryController");
 
 // router.use(isLogin);
+// router.use(acessLevel);
 /**
  *
  *  EXIBIR PAGINAS (VIEWS)
