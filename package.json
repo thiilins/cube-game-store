@@ -1,24 +1,55 @@
 {
   "name": "cube-game-store",
   "version": "1.0.0",
-  "description": "Projeto integrador desenvolvido durante o curso Desenvolvimento Web Full Stack Digital House",
+  "description": "Projeto desenvolvido pelo grupo 4 durante o curso Desenvolvimento Web Fullstack (Digital House)",
   "main": "app.js",
-  "scripts": {
-    "start": "node src/app.js",
-    "dev": "./node_modules/.bin/nodemon src/aapp.js",
-    "dev2": "nodemon src/app.js"
-  },
+  "contributors": [
+    {
+      "name": "Thiago Lins",
+      "email": "falecom@thiagolins.dev.br",
+      "url": "https://www.thiagolins.dev.br"
+    },
+    {
+      "name": "Bene Hur Pessoa",
+      "email": "benehurp@gmail.com",
+      "url": "https://www.linkedin.com/in/bene-hur-pessoa-1a8573210/"
+    },
+    {
+      "name": "Ruan Correia",
+      "email": "correia.ruan@gmail.com",
+      "url": "https://www.linkedin.com/in/ruancorreia/"
+    },
+    {
+      "name": "Thiago Lins",
+      "email": "falecom@thiagolins.dev.br",
+      "url": "https://www.thiagolins.dev.br"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thiilins/cube-game-store.git"
   },
-  "keywords": [],
+  "keywords": [
+    "nodeJS",
+    "ecommerce",
+    "expressJS",
+    "sequelizeORM0",
+    "MySQL",
+    "html5",
+    "css3",
+    "node-server"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/thiilins/cube-game-store/issues"
   },
   "homepage": "https://github.com/thiilins/cube-game-store#readme",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "./node_modules/.bin/nodemon src/aapp.js",
+    "dev2": "nodemon src/app.js"
+  },
   "dependencies": {
     "axios": "^0.23.0",
     "bcryptjs": "^2.4.3",
