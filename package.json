@@ -47,8 +47,7 @@
   "homepage": "https://github.com/thiilins/cube-game-store#readme",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "./node_modules/.bin/nodemon src/aapp.js",
-    "dev2": "nodemon src/app.js"
+    "dev": "nodemon src/app.js"
   },
   "dependencies": {
     "axios": "^0.23.0",
