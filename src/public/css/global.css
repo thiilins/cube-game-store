@@ -62,6 +62,10 @@ h3 {
   text-transform: uppercase;
   color: var(--primary);
 }
+hr {
+  width: 100%;
+  border-top: 1px solid var(--primary);
+}
 input {
   border-radius: 1rem;
   outline: none;
