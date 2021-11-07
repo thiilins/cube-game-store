@@ -1341,12 +1341,26 @@ a.cart-remove-item:hover {
 
 /* CATEGORY PAGE */
 .category-container {
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
 .category-menu {
   grid-column: 1/2;
-  background: var(--acent);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem 0;
+}
+.range-slider {
+  width: 100%;
+}
+
+.category-menu p {
+  font-size: 2.4rem;
+  color: var(--primary);
 }
 .category-list-items {
   display: flex;
