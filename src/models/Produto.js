@@ -92,8 +92,8 @@ module.exports = (connection, DataTypes) => {
       onDelete: "cascade",
     });
     Produto.belongsToMany(models.Categoria, {
-      foreignKey: "pedido_id",
-      as: "categoria",
+      foreignKey: "produto_id",
+      as: "categorias",
       through: models.ProdutoCategoria,
     });
   };

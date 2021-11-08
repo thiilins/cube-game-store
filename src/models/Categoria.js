@@ -22,7 +22,7 @@ module.exports = (connection, DataTypes) => {
   Categoria.associate = (models) => {
     Categoria.belongsToMany(models.Produto, {
       foreignKey: "categoria_id",
-      as: "categoria",
+      as: "produtos",
       through: models.ProdutoCategoria,
     });
   };

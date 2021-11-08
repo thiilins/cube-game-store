@@ -8,6 +8,539 @@
     <%- include('./partials/header'); %>
     <!-- MAIN CONTENT -->
 
+    <section class="category-container">
+      <aside class="category-menu">
+        <div>
+          <div>
+            <h3>Categorias</h3>
+            <!-- <hr /> -->
+            <hr class="prod-line" />
+          </div>
+          <!-- <p>Categoria X</p>
+          <p>Categoria X</p>
+          <p>Categoria X</p>
+          <p>Categoria X</p>
+          <p>Categoria X</p>
+          <p>Categoria X</p>
+          <p>Categoria X</p> -->
+          <ul class="category-list-menu">
+            <li class="category-list-menu-item"><a href="#">Categoria X</a></li>
+            <li class="category-list-menu-item"><a href="#">Categoria X</a></li>
+            <li class="category-list-menu-item"><a href="#">Categoria X</a></li>
+            <li class="category-list-menu-item"><a href="#">Categoria X</a></li>
+            <li class="category-list-menu-item"><a href="#">Categoria X</a></li>
+          </ul>
+        </div>
+        <div class="price-range-container">
+          <div>
+            <h3>Preço</h3>
+            <!-- <hr /> -->
+            <hr class="prod-line" />
+          </div>
+          <div class="price-range-box">
+            <input
+              type="range"
+              min="99"
+              max="999"
+              value="500"
+              id="range"
+              class="range-slider"
+            />
+            <div class="price-range-value">
+              <span>R$ 99</span><span>R$ 999</span>
+            </div>
+          </div>
+        </div>
+        <div class="rated-container">
+          <div>
+            <h3>Classificação</h3>
+            <!-- <hr /> -->
+            <hr class="prod-line" />
+          </div>
+          <div class="rated-container-stars">
+            <i id="1" class="i-star-rated"></i>
+            <i id="2" class="i-star-rated"></i>
+            <i id="3" class="i-star-rated"></i>
+            <i id="4" class="i-star-unrated"></i>
+            <i id="5" class="i-star-unrated"></i>
+          </div>
+        </div>
+      </aside>
+      <!-- <ul class="category-list-items">
+        <li class="category-item">
+          <button class="item-button">
+            <img class="item-order-icon" src="/img/icons/orders.svg" />
+          </button>
+          <img class="item-photo" src="/img/products/default.jpg" />
+          <div class="item-label">
+            <div>
+              <p class="item-title">Nome do Produto</p>
+              <p class="item-sub-title">Aqui vai uma descrição do produto</p>
+            </div>
+            <div class="item-price-container">
+              <p class="price-promo">R$ 888,99</p>
+              <p class="price-normal">R$ 888,99</p>
+            </div>
+          </div>
+        </li>
+        <li class="category-item">
+          <button class="item-button">
+            <img class="item-order-icon" src="/img/icons/orders.svg" />
+          </button>
+          <img class="item-photo" src="/img/products/default.jpg" />
+          <div class="item-label">
+            <div>
+              <p class="item-title">Nome do Produto</p>
+              <p class="item-sub-title">Aqui vai uma descrição do produto</p>
+            </div>
+            <div class="item-price-container">
+              <p class="price-promo">R$ 888,99</p>
+              <p class="price-normal">R$ 888,99</p>
+            </div>
+          </div>
+        </li>
+        <li class="category-item">
+          <button class="item-button">
+            <img class="item-order-icon" src="/img/icons/orders.svg" />
+          </button>
+          <img class="item-photo" src="/img/products/default.jpg" />
+          <div class="item-label">
+            <div>
+              <p class="item-title">Nome do Produto</p>
+              <p class="item-sub-title">Aqui vai uma descrição do produto</p>
+            </div>
+            <div class="item-price-container">
+              <p class="price-promo">R$ 888,99</p>
+              <p class="price-normal">R$ 888,99</p>
+            </div>
+          </div>
+        </li>
+        <li class="category-item">
+          <button class="item-button">
+            <img class="item-order-icon" src="/img/icons/orders.svg" />
+          </button>
+          <img class="item-photo" src="/img/products/default.jpg" />
+          <div class="item-label">
+            <div>
+              <p class="item-title">Nome do Produto</p>
+              <p class="item-sub-title">Aqui vai uma descrição do produto</p>
+            </div>
+            <div class="item-price-container">
+              <p class="price-promo">R$ 888,99</p>
+              <p class="price-normal">R$ 888,99</p>
+            </div>
+          </div>
+        </li>
+        <li class="category-item">
+          <button class="item-button">
+            <img class="item-order-icon" src="/img/icons/orders.svg" />
+          </button>
+          <img class="item-photo" src="/img/products/default.jpg" />
+          <div class="item-label">
+            <div>
+              <p class="item-title">Nome do Produto</p>
+              <p class="item-sub-title">Aqui vai uma descrição do produto</p>
+            </div>
+            <div class="item-price-container">
+              <p class="price-promo">R$ 888,99</p>
+              <p class="price-normal">R$ 888,99</p>
+            </div>
+          </div>
+        </li>
+        <li class="category-item">
+          <button class="item-button">
+            <img class="item-order-icon" src="/img/icons/orders.svg" />
+          </button>
+          <img class="item-photo" src="/img/products/default.jpg" />
+          <div class="item-label">
+            <div>
+              <p class="item-title">Nome do Produto</p>
+              <p class="item-sub-title">Aqui vai uma descrição do produto</p>
+            </div>
+            <div class="item-price-container">
+              <p class="price-promo">R$ 888,99</p>
+              <p class="price-normal">R$ 888,99</p>
+            </div>
+          </div>
+        </li>
+      </ul> -->
+
+      <ul class="products-cards">
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-product-container rel">
+          <div class="card-product-img-box">
+            <img
+              src="/img/products/default.jpg"
+              alt=""
+              class="card-product-img"
+            />
+          </div>
+          <div class="card-btn-add-to-cart">
+            <img
+              src="/img/icons/add-cart.svg"
+              alt=""
+              class="icon-add-to-cart"
+            />
+          </div>
+          <div class="card-product-title">
+            <p>Nome do Produto</p>
+          </div>
+
+          <div class="card-product-details-box">
+            <div class="card-product-name">Nome do Produto</div>
+            <div class="card-product-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+
+            <div class="card-product-details-prices">
+              <p class="card-price-old">R$ 999,00</p>
+              <p class="card-price-new">R$ 800,00</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <!-- FOOTER -->
     <%- include('./partials/footer'); %>
   </body>

@@ -8,6 +8,7 @@ const OrderController = require("../controllers/OrderController");
 const ProductController = require("../controllers/ProductController");
 const UserController = require("../controllers/UserController");
 const CategoryController = require("../controllers/CategoryController");
+const ManufacturerController = require("../controllers/ManufacturerController");
 
 // router.use(isLogin);
 // router.use(acessLevel);
@@ -20,7 +21,7 @@ const CategoryController = require("../controllers/CategoryController");
 router.get("/", AdminController.dashboardPage);
 // USUARIOS
 router.get("/usuarios", UserController.listUserPage);
-router.get("/usuarios/criar", UserController.createUserPage);
+router.get("/usuarios/:id", UserController.viewUserPage);
 router.get("/usuarios/editar/:id", UserController.editUserPage);
 router.get("/usuarios/:id", UserController.viewUserPage);
 
@@ -35,6 +36,15 @@ router.get("/categorias", CategoryController.listCategoryPage);
 router.get("/categorias/criar", CategoryController.createCategoryPage);
 router.get("/categorias/editar/:id", CategoryController.editCategoryPage);
 router.get("/categorias/:id", CategoryController.viewCategoryPage);
+
+//FABRICANTES
+router.get("/fabricantes", ManufacturerController.listManufacturerPage);
+router.get("/fabricantes/criar", ManufacturerController.createManufacturerPage);
+router.get(
+  "/fabricantes/editar/:id",
+  ManufacturerController.editManufacturerPage
+);
+router.get("/fabricantes/:id", ManufacturerController.viewManufacturerPage);
 
 // PEDIDO
 router.get("/pedidos", OrderController.listOrderPage);
@@ -59,6 +69,11 @@ router.delete("/produto/:id", ProductController.deleteProduct);
 router.post("/categoria/", CategoryController.createCategory);
 router.put("/categoria/:id", CategoryController.editCategory);
 router.delete("/categoria/:id", CategoryController.deleteCategory);
+
+//CATEGORIA
+router.post("/fabricante/", ManufacturerController.createManufacturer);
+router.put("/fabricante/:id", ManufacturerController.editManufacturer);
+router.delete("/fabricante/:id", ManufacturerController.deleteManufacturer);
 //PEDIDO
 router.post("/pedido/", OrderController.createOrder);
 router.put("/pedido/:id", OrderController.editOrder);
