@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const auth = require("../middlewares/auth");
+const upload = require('../middlewares/upload')
 const acessLevel = require("../middlewares/acessLevel");
 const AdminController = require("../controllers/AdminController");
 const OrderController = require("../controllers/OrderController");
@@ -51,8 +52,8 @@ router.post("/usuario/", UserController.createUser);
 router.put("/usuario/:id", UserController.editUser);
 router.delete("/usuario/:id", UserController.deleteUser);
 //PRODUTO
-router.post("/produto/", ProductController.createProduct);
-router.put("/produto/:id", ProductController.editProduct);
+router.post("/produto/",upload.single('imagem_destacada'), ProductController.createProduct);
+router.put("/produto/:id",upload.single('imagem_destacada'), ProductController.editProduct);
 router.delete("/produto/:id", ProductController.deleteProduct);
 //CATEGORIA
 router.post("/categoria/", CategoryController.createCategory);
