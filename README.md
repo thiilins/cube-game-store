@@ -9,7 +9,7 @@
     <img src="./.github/logo.jpg" alt="Logo">
   </a>
 <p align="center" target="_blank">
-    <a href="https://tgbr.site/cube_layout">Layout</a> &#xa0; | &#xa0;
+    <a href="https://tgpro.site/cube_layout">Layout</a> &#xa0; | &#xa0;
     <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0;
   <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-começando">Começando</a> &#xa0;  | &#xa0; 
