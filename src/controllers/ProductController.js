@@ -170,6 +170,7 @@ const ProductController = {
         where: { id },
       })
       return res.redirect('admin/produtos')
+      
     } catch (error) {
       console.log(error);
     }

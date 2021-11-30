@@ -55,6 +55,11 @@ const ManufacturerController = {
         ativo
       } = req.body;
 
+      const newManufacturer = await Manufacturer.create({
+        nome,
+        img_url,
+        ativo: 1
+      })
 
       res.status(201).json();
     } catch (error) {
@@ -63,12 +68,39 @@ const ManufacturerController = {
   },
   async editManufacturer(req, res) {
     try {
+
+      const {id} = req.params
+
+      const{
+        nome,
+        img_url,
+        ativo
+      } = req.body;
+
+      //Será necessário saber se o usuário está logado para editar?
+      
+      const manufacturerUpdate = await Manufacturer.update({
+        nome,
+        img_url,
+        ativo
+      },
+      {where: {id}}
+      );
+      return res.status(204).send();
+
     } catch (error) {
       console.log(error);
     }
   },
   async deleteManufacturer(req, res) {
     try {
+
+      const {id} = req.params;
+
+      const manufacturerDelete = await Manufacturer.destroy({
+        where: {id},
+      })
+
       res.status(204).send();
     } catch (error) {
       console.log(error);
