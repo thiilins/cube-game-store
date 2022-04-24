@@ -9,7 +9,7 @@
     <img src="./.github/logo.jpg" alt="Logo">
   </a>
 <p align="center" target="_blank">
-    <a href="https://tgpro.site/cube_layout">Layout</a> &#xa0; | &#xa0;
+    <a href="https://www.figma.com/file/kkD6M2EYo7oGMDToHGNUXs/CUBE-Game-Store---Layout-Padronizado?node-id=14%3A63">Layout</a> &#xa0; | &#xa0;
     <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0;
   <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-começando">Começando</a> &#xa0;  | &#xa0; 
