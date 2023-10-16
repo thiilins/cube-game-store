@@ -1,65 +1,50 @@
-<div id="top">
+<div align="center" id="top">
+  
+[🇧🇷 Português](./README.md) | [🇺🇸 English](./README_EN.md) | [🇪🇸 Español](./README_ES.md)
 
 </div>
 
-<!-- PROJECT LOGO -->
-<br />
+# Cube Game Store
+
 <div align="center">
-  <a href="https://github.com/thiilins/cube-game-store">
-    <img src="./.github/logo.jpg" alt="Logo">
-  </a>
-<p align="center" target="_blank">
-    <a href="https://www.figma.com/file/kkD6M2EYo7oGMDToHGNUXs/CUBE-Game-Store---Layout-Padronizado?node-id=14%3A63">Layout</a> &#xa0; | &#xa0;
-    <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0;
-  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-começando">Começando</a> &#xa0;  | &#xa0; 
-  <a href="#sparkles-etapas">Etapas</a> &#xa0;| &#xa0;
-  <a href="#heavy_check_mark-equipe">Equipe</a> &#xa0;| &#xa0;
-  <a href="#memo-licença">Licença</a> &#xa0 
+
+![Logo do Projeto](./.github/logo.jpg)
+
+[Ver Demonstração](https://www.figma.com/file/kkD6M2EYo7oGMDToHGNUXs/CUBE-Game-Store---Layout-Padronizado?node-id=14%3A63)
+
+![Contribuidores](https://img.shields.io/github/contributors/thiilins/cube-game-store?color=280E4D&style=for-the-badge)
+![Linguagem Principal](https://img.shields.io/github/languages/top/thiilins/cube-game-store?color=280E4D&style=for-the-badge)
+![Linguagens Utilizadas](https://img.shields.io/github/languages/count/thiilins/cube-game-store?color=280E4D&style=for-the-badge)
+![Licença](https://img.shields.io/github/license/thiilins/cube-game-store?color=280E4D&style=for-the-badge)
+![Tamanho do Repositório](https://img.shields.io/github/repo-size/thiilins/cube-game-store?style=for-the-badge&color=280E4D)
+
+</div>
+
+<p align="center">
+  <a href="#-sobre-o-projeto">Sobre o Projeto</a> &#xa0; | &#xa0;
+  <a href="#-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
+  <a href="#-instalação-e-uso">Instalação e Uso</a> &#xa0; | &#xa0;
+  <a href="#-etapas">Etapas</a> &#xa0; | &#xa0;
+  <a href="#-equipe">Equipe</a> &#xa0; | &#xa0;
+  <a href="#-licença">Licença</a> &#xa0; | &#xa0;
+  <a href="#-contato">Contato</a> &#xa0;
 </p>
 
-[![GitHub contributors](https://img.shields.io/github/contributors/thiilins/cube-game-store?color=280E4D&style=for-the-badge)](https://github.com/thiilins/cube-game-store/graphs/contributors)
-![GitHub top language](https://img.shields.io/github/languages/top/thiilins/cube-game-store?color=280E4D&style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/thiilins/cube-game-store?color=280E4D&style=for-the-badge)
-[![License](https://img.shields.io/github/license/thiilins/cube-game-store?color=280E4D&style=for-the-badge)](https://github.com/thiilins/cube-game-store/blob/main/LICENSE)
-[![Repository Size](https://img.shields.io/github/repo-size/thiilins/cube-game-store?style=for-the-badge&color=280E4D)](https://img.shields.io/github/repo-size/thiilins/cube-game-store?style=for-the-badge&color=ef5350)
+## 📘 Sobre o Projeto
 
-  <p align="center">
-    Projeto desenvolvido pelo grupo 4 durante o curso Desenvolvimento Web Fullstack  (Digital House)
-    <br />
-    <!-- <a href="https://github.com/thiilins/cube-game-store"><strong>Explore the docs »</strong></a> -->
-    
-  </p>
-</div>
+**Cube Game Store** é um projeto desenvolvido pelo grupo 4 durante o curso Desenvolvimento Web Fullstack (Digital House). Como projeto integrador, foi proposto o desenvolvimento de uma plataforma de ecommerce com tema livre. O grupo optou por criar um ecommerce de jogos de mesa.
 
-<br>
-
-<h4 align="center"> 
-	🚧  <strong>Cube Game Store 🚀 Em construção...  </strong>🚧
-</h4>
-
-## :dart: Sobre o Projeto
-
-<br>
 <div align="center">
-<img  src="./.github/preview.gif" alt="Logo">
+<img src="./.github/preview.gif" alt="Preview">
 </div>
-<br>
-<br>
-Como projeto integrador (projeto desenvolvido durante todo o decorrer do curso e a ser entregue ao final como comprovação para certificação) foi nos dado o desafio de desenvolver uma plataforma de ecommerce, em que o tema seria a nossa escolha e onde iríamos criando e refatorando o código a cada nova tecnologia/módulo que fossemos aprendendo.
-<br>
-Optamos então pela criação de um ecommerce de jogos de mesa, onde iriamos trabalhar desde o desenvolvimento da identidade visual até a finalização e deploy.
 
-<p align="right">(<a href="#top">voltar ao topo</a>)</p>
+O projeto engloba desde a criação da identidade visual até a finalização e deploy.
 
-## :rocket: Tecnologias
+## 🚀 Tecnologias
 
-As seguintes ferramentas foram usadas durante a construção do projeto:
-&#xa0;
-
-- [HTML5]()
-- [CSS3]()
-- [EJS]()
+- HTML5
+- CSS3
+- EJS
 - [NodeJs](https://nodejs.org/en/)
 - [React.js](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
@@ -67,34 +52,28 @@ As seguintes ferramentas foram usadas durante a construção do projeto:
 - [MySQL](https://www.mysql.com)
 - [Sequelize ORM](https://sequelize.org)
 
-<p align="right">(<a href="#top">voltar ao topo</a>)</p>
-
-## :checkered_flag: Começando
-
-Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.com) e o [Node](https://nodejs.org/en/) instalados em sua maquina.
+## 🚀 Instalação e Uso
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/thiilins/cube-game-store
+git clone https://github.com/thiilins/cube-game-store
 
 # Entre na pasta
-$ cd cube-game-store
+cd cube-game-store
 
 # Instale as dependências
-$ npm install
+npm install
 
 # Para iniciar o projeto
-$ npm start
+npm start
 
 # O app vai inicializar em <http://localhost:3000>
 
-### Usuario Administrador (Para testes) ###
+# Usuário Administrador (Para testes)
 # Usuário: admin@admin.com.br
 # Senha: 123456
-###
 ```
-
-## :sparkles: Etapas
+## 💡 Etapas
 
 - [x] Criação do layout das páginas no Figma
 - [x] Criar as Páginas em HTML/CSS
@@ -104,15 +83,8 @@ $ npm start
 - [x] Criar o DER e Banco de dados
 - [ ] Configuração do Sequelize ORM
 - [ ] Criação do Painel de Administrador
-  - [ ] Feature: Autenticação
-  - [ ] Feature: Cadastro de Produtos
-  - [ ] Feature: Categorias
 
-<p align="right">(<a href="#top">voltar ao topo</a>)</p>
-
-## :heavy_check_mark: Equipe
-
-Desenvolvedores responsáveis por esse projeto
+## 🤝 Equipe
 
 - [@thiilins](https://github.com/thiilins)
 - [@benehurp](https://github.com/benehurp)
@@ -120,14 +92,12 @@ Desenvolvedores responsáveis por esse projeto
 - [@lSodre01](https://github.com/lSodre01)
 - [@thomazszy](https://github.com/thomazszy)
 
-<p align="right">(<a href="#top">voltar ao topo</a>)</p>
+## 📜 Licença
 
-<!-- LICENSE -->
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para obter mais detalhes.
 
-## :memo: Licença
+## 📬 Contato
 
-Este projeto está sob licença MIT. Veja o arquivo `LICENSE.txt` para maiores informações.
+Para sugestões, feedback ou dúvidas, abra uma [issue](https://github.com/thiilins/cube-game-store/issues) ou entre em contato através do meu [perfil no GitHub](https://github.com/thiilins).
 
-Link do Projeto: [https://github.com/thiilins/cube-game-store](https://github.com/thiilins/cube-game-store)
-
-<p align="right">(<a href="#top">voltar ao topo</a>)</p>
+<p align="right">(<a href="#top">Voltar para o topo</a>)</p>
